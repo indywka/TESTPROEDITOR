@@ -20,7 +20,7 @@ import java.util.Collections;
 public class TestView extends JPanel {
 
     private QListModel listModel;  // Модель для компонета JList со списком вопросов
-    private JList<Question> questionList;
+    private JList<Question> questionList; //Список вопросов
     private ControlPanel controlPanel;  // управление файлом теста
     private EditPanel editPanel;  // управление элементами теста
 
@@ -28,7 +28,8 @@ public class TestView extends JPanel {
 
         listModel = new QListModel();
 
-        listModel.addListDataListener(new ListDataListener() {
+        listModel.addListDataListener(new ListDataListener() {   //чтобы узнать, когда изменится содержмиое модели,
+            // связываем ListDataListner c моделью списка
             @Override
             public void intervalAdded(ListDataEvent listDataEvent) {
 
@@ -59,17 +60,15 @@ public class TestView extends JPanel {
             }
         });
 
-        //------- Создаем и настраиваем компоненты GUI -------//
+        //------- Создаем и настраиваем компоненты графического интерфейса -------//
 
         setLayout(new BorderLayout());
 
         questionList = new JList<>(listModel);
         questionList.setBackground(Color.GRAY);
-        questionList.setCellRenderer(new ListRenderer());
-        questionList.setFixedCellWidth(questionList.getWidth());
+        questionList.setCellRenderer(new ListRenderer());//покраска ячеек списка как панелей
 
 
-        //scroll to selection if selected item is not visible
         questionList.addListSelectionListener(e ->
                 questionList.ensureIndexIsVisible(questionList.getSelectedIndex()));
 
@@ -80,7 +79,9 @@ public class TestView extends JPanel {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                if (e.getClickCount() == 2) editPanel.getEditButton().doClick();
+                if (e.getClickCount() == 2) {
+                    editPanel.getEditButton().doClick();
+                }
             }
         });
 
