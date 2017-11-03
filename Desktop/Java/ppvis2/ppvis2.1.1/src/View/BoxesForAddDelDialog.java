@@ -5,40 +5,18 @@ import Model.DataBase;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
-import java.awt.*;
-import java.awt.event.KeyEvent;
 
 
-class BoxesForSeacrhDelDialog {
+class BaseForStudentDialog {
 
     Box studentFioBox(String key, DataBase dataBase, TablePanel tablePanel) {
-
         JTextField studentSurName = new JTextField(10);
-        studentSurName.setBorder(new TitledBorder("Фамилия:"));
+        studentSurName.setBorder(new TitledBorder("Фамилия"));
         JTextField studentFirstName = new JTextField(10);
-        studentFirstName.setBorder(new TitledBorder("Имя:"));
+        studentFirstName.setBorder(new TitledBorder("Имя"));
         JTextField studentSecondName = new JTextField(10);
-        studentSecondName.setBorder(new TitledBorder("Отчество:"));
-
-
-        Box unityBox = Box.createVerticalBox();
-        Box studentFioBox = Box.createVerticalBox();
-        Box txtLine1 = Box.createHorizontalBox();
-        txtLine1.add(studentSurName);
-        txtLine1.add((Box.createHorizontalStrut(10)));
-        txtLine1.add(studentFirstName);
-        txtLine1.add((Box.createHorizontalStrut(10)));
-        txtLine1.add(studentSecondName);
-        studentFioBox.add(txtLine1);
-        studentFioBox.setBorder(new TitledBorder("ФИО студента:"));
-
-
-        JPanel BtnPanel = new JPanel(new GridLayout(1, 1, 2, 2));
-        JButton okBtn = new JButton("Выполнить");
-        okBtn.setMnemonic(KeyEvent.VK_ENTER);
-        okBtn.setBackground(new Color(255, 255, 255));
-        okBtn.setPreferredSize(new Dimension(220, 25));
-        okBtn.setBorder(BorderFactory.createBevelBorder(0, new Color(90, 255, 229), new Color(214, 47, 255)));
+        studentSecondName.setBorder(new TitledBorder("Отчество"));
+        JButton okBtn = new JButton("OK");
         if (key.equals("delete")) {
             okBtn.addActionListener(e -> {
                 DeleteStudentFIO temp = new DeleteStudentFIO(dataBase,
@@ -53,12 +31,20 @@ class BoxesForSeacrhDelDialog {
                 tablePanel.updateTable();
             });
         }
-        unityBox.add(studentFioBox);
-        JPanel flow = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        flow.add(BtnPanel);
-        BtnPanel.add(okBtn);
-        unityBox.add(flow);
 
+        Box unityBox = Box.createVerticalBox();
+        Box studentFioBox = Box.createVerticalBox();
+        Box txtLine1 = Box.createHorizontalBox();
+        txtLine1.add(studentSurName);
+        txtLine1.add((Box.createHorizontalStrut(10)));
+        txtLine1.add(studentFirstName);
+        txtLine1.add((Box.createHorizontalStrut(10)));
+        txtLine1.add(studentSecondName);
+        studentFioBox.add(txtLine1);
+        studentFioBox.setBorder(new TitledBorder(" - по ФИО студента"));
+
+        unityBox.add(studentFioBox);
+        unityBox.add(okBtn);
 
         return unityBox;
     }
@@ -66,43 +52,20 @@ class BoxesForSeacrhDelDialog {
 
     Box parentFioBox(String key, DataBase dataBase, TablePanel tablePanel) {
         JTextField dadSurName = new JTextField(10);
-        dadSurName.setBorder(new TitledBorder("Фамилия:"));
+        dadSurName.setBorder(new TitledBorder("Фамилия"));
         JTextField dadFirstName = new JTextField(10);
-        dadFirstName.setBorder(new TitledBorder("Имя:"));
+        dadFirstName.setBorder(new TitledBorder("Имя"));
         JTextField dadSecondName = new JTextField(10);
-        dadSecondName.setBorder(new TitledBorder("Отчество:"));
+        dadSecondName.setBorder(new TitledBorder("Отчество"));
 
         JTextField mumSurName = new JTextField(10);
-        mumSurName.setBorder(new TitledBorder("Фамилия:"));
+        mumSurName.setBorder(new TitledBorder("Фамилия"));
         JTextField mumFirstName = new JTextField(10);
-        mumFirstName.setBorder(new TitledBorder("Имя:"));
+        mumFirstName.setBorder(new TitledBorder("Имя"));
         JTextField mumSecondName = new JTextField(10);
-        mumSecondName.setBorder(new TitledBorder("Отчество:"));
+        mumSecondName.setBorder(new TitledBorder("Отчество"));
 
-
-        Box parentFioBox = Box.createVerticalBox();
-        Box txtLine1 = Box.createHorizontalBox();
-        txtLine1.add(dadSurName);
-        txtLine1.add((Box.createHorizontalStrut(10)));
-        txtLine1.add(dadFirstName);
-        txtLine1.add((Box.createHorizontalStrut(10)));
-        txtLine1.add(dadSecondName);
-        txtLine1.setBorder(new TitledBorder("ФИО отца:"));
-
-        Box txtLine2 = Box.createHorizontalBox();
-        txtLine2.add(mumSurName);
-        txtLine2.add((Box.createHorizontalStrut(10)));
-        txtLine2.add(mumFirstName);
-        txtLine2.add((Box.createHorizontalStrut(10)));
-        txtLine2.add(mumSecondName);
-        txtLine2.setBorder(new TitledBorder("ФИО матери:"));
-
-        JPanel BtnPanel = new JPanel(new GridLayout(1, 1, 2, 2));
-        JButton okBtn = new JButton("Выполнить");
-        okBtn.setMnemonic(KeyEvent.VK_ENTER);
-        okBtn.setBackground(new Color(255, 255, 255));
-        okBtn.setPreferredSize(new Dimension(220, 25));
-        okBtn.setBorder(BorderFactory.createBevelBorder(0, new Color(90, 255, 229), new Color(214, 47, 255)));
+        JButton okBtn = new JButton("OK");
         if (key.equals("delete")) {
             okBtn.addActionListener(e -> {
                 DeleteParentFIO temp = new DeleteParentFIO(dataBase,
@@ -119,15 +82,29 @@ class BoxesForSeacrhDelDialog {
                 tablePanel.updateTable();
             });
         }
+        Box parentFIOBox = Box.createVerticalBox();
 
-        parentFioBox.add(txtLine1);
-        parentFioBox.add(txtLine2);
-        JPanel flow = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        flow.add(BtnPanel);
-        BtnPanel.add(okBtn);
-        parentFioBox.add(flow);
+        Box txtLine1 = Box.createHorizontalBox();
+        txtLine1.add(dadSurName);
+        txtLine1.add((Box.createHorizontalStrut(10)));
+        txtLine1.add(dadFirstName);
+        txtLine1.add((Box.createHorizontalStrut(10)));
+        txtLine1.add(dadSecondName);
+        txtLine1.setBorder(new TitledBorder("ФИО отца"));
 
-        return parentFioBox;
+        Box txtLine2 = Box.createHorizontalBox();
+        txtLine2.add(mumSurName);
+        txtLine2.add((Box.createHorizontalStrut(10)));
+        txtLine2.add(mumFirstName);
+        txtLine2.add((Box.createHorizontalStrut(10)));
+        txtLine2.add(mumSecondName);
+        txtLine2.setBorder(new TitledBorder("ФИО матери"));
+
+        parentFIOBox.add(txtLine1);
+        parentFIOBox.add(txtLine2);
+        parentFIOBox.add(okBtn);
+
+        return parentFIOBox;
     }
 
 
@@ -140,7 +117,7 @@ class BoxesForSeacrhDelDialog {
         brothNum.add(Box.createHorizontalStrut(8));
         brothNum.add(new JLabel("до: "));
         brothNum.add(numOfBrothersMax);
-        brothNum.setBorder(new TitledBorder("Число братьев:"));
+        brothNum.setBorder(new TitledBorder("Кол-во  - по числу братьев или сестёр"));
 
         Box numberOfSisters = Box.createHorizontalBox();
         JTextField numOfSistersMin = new JTextField(5);
@@ -150,23 +127,10 @@ class BoxesForSeacrhDelDialog {
         numberOfSisters.add(Box.createHorizontalStrut(8));
         numberOfSisters.add(new JLabel("до: "));
         numberOfSisters.add(numOfSistersMax);
-        numberOfSisters.setBorder(new TitledBorder("Кол-во сестер:"));
+        numberOfSisters.setBorder(new TitledBorder("Кол-во сестер"));
 
-        Box unityBox = Box.createVerticalBox();
-        Box brotherSisterBox = Box.createHorizontalBox();
-        brotherSisterBox.add(Box.createHorizontalStrut(50));
-        brotherSisterBox.add(brothNum);
-        brotherSisterBox.add(Box.createHorizontalStrut(30));
-        brotherSisterBox.add(numberOfSisters);
-        brotherSisterBox.add(Box.createHorizontalStrut(50));
 
-        JPanel BtnPanel = new JPanel(new GridLayout(1, 1, 2, 2));
-        JButton okBtn = new JButton("Выполнить");
-        okBtn.setMnemonic(KeyEvent.VK_ENTER);
-        okBtn.setBackground(new Color(255, 255, 255));
-        okBtn.setPreferredSize(new Dimension(220, 25));
-        okBtn.setBorder(BorderFactory.createBevelBorder(0, new Color(90, 255, 229), new Color(214, 47, 255)));
-
+        JButton okBtn = new JButton("OK");
         if (key.equals("search")) {
             okBtn.addActionListener(e -> {
                 SearchBrotherSister temp = new SearchBrotherSister(dataBase,
@@ -183,12 +147,16 @@ class BoxesForSeacrhDelDialog {
                         numOfSistersMin.getText(), numOfSistersMax.getText());
             });
         }
+        Box unityBox = Box.createVerticalBox();
+        Box brotherSisterBox = Box.createHorizontalBox();
+        brotherSisterBox.add(Box.createHorizontalStrut(50));
+        brotherSisterBox.add(brothNum);
+        brotherSisterBox.add(Box.createHorizontalStrut(30));
+        brotherSisterBox.add(numberOfSisters);
+        brotherSisterBox.add(Box.createHorizontalStrut(50));
 
         unityBox.add(brotherSisterBox);
-        JPanel flow = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        flow.add(BtnPanel);
-        BtnPanel.add(okBtn);
-        unityBox.add(flow);
+        unityBox.add(okBtn);
 
         return unityBox;
     }
@@ -203,7 +171,7 @@ class BoxesForSeacrhDelDialog {
         dadSalary.add(Box.createHorizontalStrut(8));
         dadSalary.add(new JLabel("до: "));
         dadSalary.add(dadSalaryMax);
-        dadSalary.setBorder(new TitledBorder("Заработок отца:"));
+        dadSalary.setBorder(new TitledBorder(" - по заработку одного из родителей отца (BYN)"));
 
         Box mumSalary = Box.createHorizontalBox();
         JTextField mumSalaryMin = new JTextField(8);
@@ -213,24 +181,9 @@ class BoxesForSeacrhDelDialog {
         mumSalary.add(Box.createHorizontalStrut(8));
         mumSalary.add(new JLabel("до: "));
         mumSalary.add(mumSalaryMax);
-        mumSalary.setBorder(new TitledBorder("Заработок матери:"));
+        mumSalary.setBorder(new TitledBorder(" - по заработку одного из родителей матери (BYN)"));
 
-
-        Box unityBox = Box.createVerticalBox();
-        Box parentSalaryBox = Box.createHorizontalBox();
-        parentSalaryBox.add(Box.createHorizontalStrut(50));
-        parentSalaryBox.add(dadSalary);
-        parentSalaryBox.add(Box.createHorizontalStrut(30));
-        parentSalaryBox.add(mumSalary);
-        parentSalaryBox.add(Box.createHorizontalStrut(50));
-
-        JPanel BtnPanel = new JPanel(new GridLayout(1, 1, 2, 2));
-        JButton okBtn = new JButton("Выполнить");
-        okBtn.setMnemonic(KeyEvent.VK_ENTER);
-        okBtn.setBackground(new Color(255, 255, 255));
-        okBtn.setPreferredSize(new Dimension(220, 25));
-        okBtn.setBorder(BorderFactory.createBevelBorder(0, new Color(90, 255, 229), new Color(214, 47, 255)));
-
+        JButton okBtn = new JButton("OK");
         if (key.equals("search")) {
             okBtn.addActionListener(e -> {
                 SearchParentSalary temp = new SearchParentSalary(dataBase,
@@ -247,12 +200,16 @@ class BoxesForSeacrhDelDialog {
                         mumSalaryMin.getText(), mumSalaryMax.getText());
             });
         }
+        Box unityBox = Box.createVerticalBox();
+        Box parentSalaryBox = Box.createHorizontalBox();
+        parentSalaryBox.add(Box.createHorizontalStrut(50));
+        parentSalaryBox.add(dadSalary);
+        parentSalaryBox.add(Box.createHorizontalStrut(30));
+        parentSalaryBox.add(mumSalary);
+        parentSalaryBox.add(Box.createHorizontalStrut(50));
 
         unityBox.add(parentSalaryBox);
-        JPanel flow = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        flow.add(BtnPanel);
-        BtnPanel.add(okBtn);
-        unityBox.add(flow);
+        unityBox.add(okBtn);
 
         return unityBox;
     }
