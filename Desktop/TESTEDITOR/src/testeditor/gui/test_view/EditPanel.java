@@ -20,10 +20,8 @@ import java.util.List;
 
 public class EditPanel extends JPanel {
 
-    private JButton editButton;
-    private JButton createButton;
+    private JButton editButton, createButton;
     private JList<Question> list;
-
     private ArrayList<JButton> buttons;
 
     EditPanel(JList<Question> list) {
@@ -57,9 +55,6 @@ public class EditPanel extends JPanel {
         );
     }
 
-    public List<JButton> getButtons() {
-        return buttons;
-    }
 
     public JButton getCreateButton() {
         return createButton;
@@ -69,7 +64,9 @@ public class EditPanel extends JPanel {
         return editButton;
     }
 
-
+    public List<JButton> getButtons() {
+        return buttons;
+    }
 
     /**
      * Группа с кнопками редактирования, создания и удаления вопроса
@@ -91,10 +88,6 @@ public class EditPanel extends JPanel {
             createButton = new EditPanelButton(new CreateQuestionAction(list));
 
             JButton deleteButton = new EditPanelButton(new RemoveQuestionAction(list));
-
-            editButton.setEnabled(false);
-            createButton.setEnabled(false);
-            deleteButton.setEnabled(false);
 
             buttons = new ArrayList<>();
             buttons.add(editButton);

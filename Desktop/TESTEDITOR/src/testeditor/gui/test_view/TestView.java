@@ -68,6 +68,14 @@ public class TestView extends JPanel {
         questionList.setBackground(Color.GRAY);
         questionList.setCellRenderer(new ListRenderer());//покраска ячеек списка как панелей
 
+        questionList.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                if (e.getClickCount() == 2) editPanel.getEditButton().doClick();
+
+            }
+        });
 
         questionList.addListSelectionListener(e ->
                 questionList.ensureIndexIsVisible(questionList.getSelectedIndex()));
@@ -75,15 +83,6 @@ public class TestView extends JPanel {
         JScrollPane scrollPane = new JScrollPane(questionList); // полоса прокрутки для списка
         scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        questionList.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                if (e.getClickCount() == 2) {
-                    editPanel.getEditButton().doClick();
-                }
-            }
-        });
 
         controlPanel = new ControlPanel(questionList);
         editPanel = new EditPanel(questionList);
@@ -98,7 +97,9 @@ public class TestView extends JPanel {
     public EditPanel getEditPanel() {
         return editPanel;
     }
-
+    public JList<Question> getQuestionList() {
+        return questionList;
+    }
     public ControlPanel getControlPanel() {
         return controlPanel;
     }

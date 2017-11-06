@@ -11,9 +11,7 @@ public class Test extends LinkedHashSet<Question> {
     private static String filePath = "";
     private static Test t = null;
 
-    private Test() {
-        super();
-    }
+    private Test() { }
 
     public static void getTestFromFile(String filepath) {
         try {
