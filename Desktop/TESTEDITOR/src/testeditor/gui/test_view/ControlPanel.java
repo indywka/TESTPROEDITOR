@@ -12,9 +12,9 @@ import java.awt.*;
 /**
  * Панель для управления созданием, открытием и сохранением теста
  */
+
 public class ControlPanel extends JPanel {
-    private JButton createButton;
-    private JButton openButton;
+
     private JButton saveAsButton;
 
 
@@ -22,25 +22,17 @@ public class ControlPanel extends JPanel {
 
         setLayout(new FlowLayout(FlowLayout.LEFT, 20, 20));
 
-        createButton = new VerticalButton(new CreateTestAction(questionList)); //кнопка создать тест
+        JButton createButton = new VerticalButton(new CreateTestAction(questionList));
         add(createButton);
 
-        openButton = new VerticalButton(new OpenTestAction(questionList)); // кнопка открыть тест
+        JButton openButton = new VerticalButton(new OpenTestAction(questionList));
         add(openButton);
 
-        saveAsButton = new VerticalButton(new SaveAsTestAction(questionList)); // кнопка сохранить
+        saveAsButton = new VerticalButton(new SaveAsTestAction(questionList));
         saveAsButton.setEnabled(false);
         add(saveAsButton);
 
 
-    }
-
-    public JButton getCreateButton() {
-        return createButton;
-    }
-
-    public JButton getOpenButton() {
-        return openButton;
     }
 
     public JButton getSaveAsButton() {

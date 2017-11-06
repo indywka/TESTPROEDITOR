@@ -3,7 +3,7 @@ package testeditor.gui.services;
 import java.awt.*;
 
 /**
- * Вспомогательный класс для сеточно-контейнерной компоновки
+.............. для сеточно-контейнерной компоновки
  */
 public class GBC extends GridBagConstraints {
     public GBC(int gridx, int gridy, int gridwidth, int gridheight, int ipadx, int ipady, double weightx, double weighty) {

@@ -30,20 +30,21 @@ abstract public class QuestionFrame extends BaseMainFrame {
 
     final JScrollPane aScrollPane;
 
-    private final Question q;
+    private final Question question;
 
     final HintLabel hintLabel;
 
     private final QTextArea nameTextArea;
 
-    private final QTextArea qTextArea;
+    private final QTextArea questionTextArea;
 
     private final JButton saveButton;
 
 
 
-    QuestionFrame(Question q) {
-        this.q = q;
+    QuestionFrame(Question thisQuestion) {
+
+        this.question = thisQuestion;
 
         int WIDTH = 500;
         setMaximumSize(new Dimension(WIDTH, SCREEN_HEIGHT));
@@ -52,23 +53,25 @@ abstract public class QuestionFrame extends BaseMainFrame {
         setDefaultCloseOperation(HIDE_ON_CLOSE);
 
         setVisible(true);
-        setLayout(new BorderLayout(30, 30));
+        setLayout(new BorderLayout(25,25));
 
-        JPanel north = new JPanel();
-        GroupLayout northLayout = new GroupLayout(north);
-        north.setLayout(northLayout);
+        JPanel northPanel = new JPanel();
+        GroupLayout northLayout = new GroupLayout(northPanel);
+        northPanel.setLayout(northLayout);
         northLayout.setAutoCreateContainerGaps(true);
         northLayout.setAutoCreateGaps(true);
-        TitledBorder northBorder = BorderFactory.createTitledBorder("<html><I>Тип вопроса: </I>" + q.TYPE + "</html>");
+        TitledBorder northBorder = BorderFactory.createTitledBorder("<html><I>Тип вопроса: </I>" + thisQuestion.TYPE + "</html>");
         northBorder.setTitleJustification(TitledBorder.CENTER);
-        north.setBorder(BorderFactory.createCompoundBorder(new EmptyBorder(10, 5, 5, 5), northBorder));
+        northPanel.setBorder(BorderFactory.createCompoundBorder(new EmptyBorder(10, 5, 5, 5), northBorder));
 
         QLabel labelName = new QLabel("<html><b>Название:</b></html>");
         QLabel labelQuestion = new QLabel("<html><b>Вопрос:</b></html>");
-        nameTextArea = new QTextArea(q.getQName());
-        qTextArea = new QTextArea(q.getQText());
+
+        nameTextArea = new QTextArea(thisQuestion.getQName());
+        questionTextArea = new QTextArea(thisQuestion.getQText());
+
         fields.add(nameTextArea);
-        fields.add(qTextArea);
+        fields.add(questionTextArea);
 
         northLayout.setHorizontalGroup(northLayout.createSequentialGroup()
                 .addGroup(northLayout.createParallelGroup(LEADING)
@@ -76,7 +79,7 @@ abstract public class QuestionFrame extends BaseMainFrame {
                         .addComponent(labelQuestion, 0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGroup(northLayout.createParallelGroup(LEADING)
                         .addComponent(nameTextArea, 0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(qTextArea, 0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(questionTextArea, 0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         northLayout.linkSize(SwingConstants.HORIZONTAL, labelName, labelQuestion);
@@ -87,10 +90,10 @@ abstract public class QuestionFrame extends BaseMainFrame {
                         .addComponent(nameTextArea, 0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGroup(northLayout.createParallelGroup(BASELINE)
                         .addComponent(labelQuestion, 0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(qTextArea, 0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(questionTextArea, 0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        add(north, BorderLayout.NORTH);
+        add(northPanel, BorderLayout.NORTH);
 
         answerPanel.setLayout(new BorderLayout(10, 10));
 
@@ -133,7 +136,7 @@ abstract public class QuestionFrame extends BaseMainFrame {
     private void saveQuestion() {
         try {
             String name = nameTextArea.getText();
-            String text = qTextArea.getText();
+            String text = questionTextArea.getText();
             List<Answer> aList = collectAnswers();
             aList.removeIf(a -> a.getAText().isEmpty());
 
@@ -146,9 +149,9 @@ abstract public class QuestionFrame extends BaseMainFrame {
             if (aList.isEmpty()) {
                 throw new SaveQuestionException("Вопрос должен иметь хотя бы один вариант ответа");
             }
-            q.setQName(name);
-            q.setQText(text);
-            q.setAnswers(aList);
+            question.setQName(name);
+            question.setQText(text);
+            question.setAnswers(aList);
         } catch (SaveQuestionException e) {
             JOptionPane.showMessageDialog(this
                     , e.getMessage()

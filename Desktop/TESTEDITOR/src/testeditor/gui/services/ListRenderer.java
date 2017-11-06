@@ -65,3 +65,6 @@ public class ListRenderer extends JPanel implements ListCellRenderer<Question> {
     }
 
 }
+
+
+//Возвращаем компонент, который был настроен для отображения указанного значения.

@@ -30,6 +30,7 @@ public class QListModel extends DefaultListModel<Question> implements DocumentLi
     }
 
     private void filter(String search) {
+
         super.clear();
 
         for (Question question : defaultList) {
@@ -39,14 +40,21 @@ public class QListModel extends DefaultListModel<Question> implements DocumentLi
         fireContentsChanged(this, 0, getSize());
     }
 
-    // Реализация Document Listener: методы insertUpdate, removeUpdate, changedUpdated
+
+    // Реализация интерфейса Document Listener: методы insertUpdate, removeUpdate, changedUpdated
+
+    /* System.err — ваше сообщение тут же выводится на консоль,
+    но когда пишете в System.out, то оно может на какое-то время быть буферизированно.
+    Stacktrace необработанного исключение выводится через System.err,
+    что позволяет им обгонять «обычные» сообщения.*/
+
     public void insertUpdate(DocumentEvent event) {
         Document document = event.getDocument();
         try {
             lastFilter = document.getText(0, document.getLength());
             filter(lastFilter);
-        } catch (BadLocationException ble) {
-            ble.printStackTrace();
+        } catch (BadLocationException badLocationException) {
+            badLocationException.printStackTrace();
         }
     }
 
@@ -55,8 +63,8 @@ public class QListModel extends DefaultListModel<Question> implements DocumentLi
         try {
             lastFilter = document.getText(0, document.getLength());
             filter(lastFilter);
-        } catch (BadLocationException ble) {
-            ble.printStackTrace();
+        } catch (BadLocationException badLocationException) {
+            badLocationException.printStackTrace();
         }
     }
 
@@ -72,7 +80,7 @@ public class QListModel extends DefaultListModel<Question> implements DocumentLi
             //гасим обработку событий и работаем со списком. Потом снова включаем обработку событий
             Arrays.stream(listeners).forEach(this::removeListDataListener);
             this.clear();
-            Test.getTest().stream().forEach(this::addElement);
+            Test.getTest().forEach(this::addElement);
             Arrays.stream(listeners).forEach(this::addListDataListener);
 
             //генерируем событие добавления и обновляем UI вручную, т.к. во время обновления списка

@@ -7,7 +7,6 @@ import testeditor.question.Answer;
 import testeditor.question.Question;
 
 import javax.swing.*;
-import javax.swing.text.BadLocationException;
 import javax.swing.text.JTextComponent;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
@@ -22,8 +21,6 @@ public class MultiChoiceFrame extends QuestionFrame {
     private List<JSpinner> spinnerList = new ArrayList<>();
     private JPanel answers = new JPanel();
     private int aCount;
-    private String checkBoxErrorMessage = "";
-    private String spinnerErrorMessage = "";
 
     public MultiChoiceFrame(Question q) {
         super(q);
@@ -167,7 +164,7 @@ public class MultiChoiceFrame extends QuestionFrame {
 
     private void checkAnswers() {
         int countSelected = 0;
-        checkBoxErrorMessage = "";
+        String checkBoxErrorMessage = "";
 
         for (JCheckBox checkBox : checkBoxList) {
             if (checkBox.isSelected()) {
@@ -175,6 +172,7 @@ public class MultiChoiceFrame extends QuestionFrame {
             }
         }
 
+        String spinnerErrorMessage = "";
         if (spinnerErrorMessage.isEmpty()) {
             getSaveButton().setEnabled(true);
         }
@@ -196,9 +194,7 @@ public class MultiChoiceFrame extends QuestionFrame {
                 getSaveButton().setEnabled(true);
             }
         } else {
-            hintLabel.error(b -> b.setEnabled(false),
-                            getSaveButton(),
-                            checkBoxErrorMessage);
+            hintLabel.error(checkBoxErrorMessage);
         }
 
     }

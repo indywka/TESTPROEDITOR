@@ -7,7 +7,6 @@ public class ParentFrame extends JFrame {
 
     protected final int SCREEN_HEIGHT;
     final int SCREEN_WIDTH;
-    protected int initialHeight;
 
     ParentFrame() {
 
@@ -28,7 +27,6 @@ public class ParentFrame extends JFrame {
     //------- Устанавливаем расположение и размер окна -------//
 
     public void setSize(int initialWidth, int initialHeight) {
-        this.initialHeight = initialHeight;
         super.setSize(initialWidth, initialHeight);
         setLocation((SCREEN_WIDTH - initialWidth) / 2,
                 (SCREEN_HEIGHT - initialHeight) / 2);

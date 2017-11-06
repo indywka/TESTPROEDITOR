@@ -4,7 +4,6 @@ import testeditor.gui.question_view.actions.CreateQuestionAction;
 import testeditor.gui.question_view.actions.EditQuestionAction;
 import testeditor.gui.question_view.actions.RemoveQuestionAction;
 import testeditor.gui.services.EditPanelButton;
-import testeditor.gui.services.QListModel;
 import testeditor.question.Question;
 
 import javax.swing.*;
@@ -13,13 +12,14 @@ import javax.swing.border.TitledBorder;
 import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
 import java.util.List;
 
 /**
  * Панель управления элементами списка
  */
+
 public class EditPanel extends JPanel {
+
     private JButton editButton;
     private JButton createButton;
     private JList<Question> list;
@@ -27,17 +27,18 @@ public class EditPanel extends JPanel {
     private ArrayList<JButton> buttons;
 
     EditPanel(JList<Question> list) {
+
         this.list = list;
 
-        // Экземпляры групп кнопок для редактирования
         EditingGroup editingGroup = new EditingGroup();
         FindField findField = new FindField();
 
         GroupLayout editPanelLayout = new GroupLayout(this); // Групповой компоновщик для EditPanel
 
         setLayout(editPanelLayout);
-        editPanelLayout.setAutoCreateContainerGaps(true);
-        editPanelLayout.setAutoCreateGaps(true);
+        editPanelLayout.setAutoCreateContainerGaps(true);//Устанавливает, должен ли автоматически создаваться разрыв между контейнером и компонентами,
+        // которые касаются границы контейнера.
+        editPanelLayout.setAutoCreateGaps(true);//Устанавливает, должен ли автоматически создаваться промежуток между компонентами.
 
         editPanelLayout.setHorizontalGroup(editPanelLayout.createParallelGroup()
                 .addComponent(editingGroup)
@@ -56,6 +57,10 @@ public class EditPanel extends JPanel {
         );
     }
 
+    public List<JButton> getButtons() {
+        return buttons;
+    }
+
     public JButton getCreateButton() {
         return createButton;
     }
@@ -64,13 +69,12 @@ public class EditPanel extends JPanel {
         return editButton;
     }
 
-    public List<JButton> getButtons() {
-        return buttons;
-    }
+
 
     /**
-     * Внутренний класс - Группа с кнопками редактирования, создания и удаления вопроса
+     * Группа с кнопками редактирования, создания и удаления вопроса
      */
+
     public class EditingGroup extends JPanel {
         EditingGroup() {
             setBorder(BorderFactory.createCompoundBorder(new EmptyBorder(10, 10, 10, 10),
@@ -83,8 +87,14 @@ public class EditPanel extends JPanel {
             editingPanelLayout.setAutoCreateGaps(true);
 
             editButton = new EditPanelButton(new EditQuestionAction(list));
+
             createButton = new EditPanelButton(new CreateQuestionAction(list));
+
             JButton deleteButton = new EditPanelButton(new RemoveQuestionAction(list));
+
+            editButton.setEnabled(false);
+            createButton.setEnabled(false);
+            deleteButton.setEnabled(false);
 
             buttons = new ArrayList<>();
             buttons.add(editButton);
@@ -108,7 +118,7 @@ public class EditPanel extends JPanel {
     }
 
     /**
-     * Внутренний класс - поле для поиска
+     * Поле для поиска
      */
 
     public class FindField extends JPanel {
@@ -130,4 +140,5 @@ public class EditPanel extends JPanel {
 
 
     }
+
 }

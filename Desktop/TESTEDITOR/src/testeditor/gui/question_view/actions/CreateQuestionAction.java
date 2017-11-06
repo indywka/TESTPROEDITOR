@@ -15,7 +15,7 @@ import java.awt.event.WindowEvent;
 public class CreateQuestionAction extends AbstractAction {
 
     private JList<Question> list;
-    private Question q = new MultiChoice();
+    private Question q = null;
 
     public CreateQuestionAction(JList<Question> qList) {
         list = qList;
@@ -31,6 +31,7 @@ public class CreateQuestionAction extends AbstractAction {
 
     public void actionPerformed(ActionEvent event) {
 
+        q = new MultiChoice();
         JFrame qFrame = q.getFrame();
 
         qFrame.addWindowListener(new WindowAdapter() {

@@ -3,7 +3,6 @@ package testeditor.gui.test_view.actions;
 import testeditor.Test;
 import testeditor.gui.MainFrame;
 import testeditor.gui.services.QListModel;
-import testeditor.gui.test_view.ControlPanel;
 import testeditor.question.Question;
 import testeditor.saver.Saver;
 import testeditor.saver.XmlSaver;
@@ -19,9 +18,11 @@ import java.net.URL;
  * Класс-слушатель для события открытия файла
  */
 public class SaveAsTestAction extends AbstractAction {
+
     private JList<Question> qList;
 
     public SaveAsTestAction(JList<Question> qList) {
+
         this.qList = qList;
 
         this.putValue(Action.NAME, "Сохранить как...");
