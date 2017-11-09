@@ -16,6 +16,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import static javax.swing.GroupLayout.Alignment.BASELINE;
 import static javax.swing.GroupLayout.Alignment.LEADING;
 
@@ -29,17 +30,13 @@ abstract public class QuestionFrame extends BaseMainFrame {
     final ArrayList<JTextComponent> fields = new ArrayList<>();
 
     final JScrollPane aScrollPane;
-
-    private final Question question;
-
     final HintLabel hintLabel;
-
+    private final Question question;
     private final QTextArea nameTextArea;
 
     private final QTextArea questionTextArea;
 
     private final JButton saveButton;
-
 
 
     QuestionFrame(Question thisQuestion) {
@@ -53,16 +50,14 @@ abstract public class QuestionFrame extends BaseMainFrame {
         setDefaultCloseOperation(HIDE_ON_CLOSE);
 
         setVisible(true);
-        setLayout(new BorderLayout(25,25));
+        setLayout(new BorderLayout(25, 25));
 
         JPanel northPanel = new JPanel();
         GroupLayout northLayout = new GroupLayout(northPanel);
         northPanel.setLayout(northLayout);
         northLayout.setAutoCreateContainerGaps(true);
         northLayout.setAutoCreateGaps(true);
-        TitledBorder northBorder = BorderFactory.createTitledBorder("<html><I>Тип вопроса: </I>" + thisQuestion.TYPE + "</html>");
-        northBorder.setTitleJustification(TitledBorder.CENTER);
-        northPanel.setBorder(BorderFactory.createCompoundBorder(new EmptyBorder(10, 5, 5, 5), northBorder));
+
 
         QLabel labelName = new QLabel("<html><b>Название:</b></html>");
         QLabel labelQuestion = new QLabel("<html><b>Вопрос:</b></html>");
@@ -137,8 +132,8 @@ abstract public class QuestionFrame extends BaseMainFrame {
         try {
             String name = nameTextArea.getText();
             String text = questionTextArea.getText();
-            List<Answer> aList = collectAnswers();
-            aList.removeIf(a -> a.getAText().isEmpty());
+            List<Answer> answersList = collectAnswers();
+            answersList.removeIf(a -> a.getAText().isEmpty());
 
             if (name.isEmpty()) {
                 name = "";
@@ -146,12 +141,12 @@ abstract public class QuestionFrame extends BaseMainFrame {
             if (text.isEmpty()) {
                 throw new SaveQuestionException("Поле \"Название\" должно быть заполнено");
             }
-            if (aList.isEmpty()) {
+            if (answersList.isEmpty()) {
                 throw new SaveQuestionException("Вопрос должен иметь хотя бы один вариант ответа");
             }
             question.setQName(name);
             question.setQText(text);
-            question.setAnswers(aList);
+            question.setAnswers(answersList);
         } catch (SaveQuestionException e) {
             JOptionPane.showMessageDialog(this
                     , e.getMessage()

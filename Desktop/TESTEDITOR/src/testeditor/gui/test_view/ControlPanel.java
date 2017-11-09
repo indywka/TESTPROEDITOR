@@ -15,7 +15,7 @@ import java.awt.*;
 
 public class ControlPanel extends JPanel {
 
-    private JButton saveAsButton;
+    private final JButton saveAsButton;
 
 
     ControlPanel(JList<Question> questionList) {

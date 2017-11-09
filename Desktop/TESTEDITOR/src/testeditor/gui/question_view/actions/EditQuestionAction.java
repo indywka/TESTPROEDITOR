@@ -11,7 +11,7 @@ import java.awt.event.WindowEvent;
 
 public class EditQuestionAction extends AbstractAction {
 
-    private JList list;
+    private final JList list;
 
     public EditQuestionAction(JList questionsList) {
 

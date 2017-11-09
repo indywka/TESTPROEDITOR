@@ -42,19 +42,6 @@ public class ListRenderer extends JPanel implements ListCellRenderer<Question> {
                 .setInsets(10, 5, 10, 10));
 
 
-        /*тип вопроса*/
-
-        JLabel labelType = new JLabel("<html>" +
-                "<p align='right'>" +
-                "<b>Тип вопроса:</b>" +
-                "<br>" + value.TYPE +
-                "</p>" +
-                "<br></html>");
-
-        labelType.setFont(new Font("Sans-Serif", Font.PLAIN, 12));
-
-        add(labelType, new GBC(3, 0, 1, 1, 0, 0, 0, 0).setFill(GBC.BOTH)
-                .setInsets(10, 20, 10, 5));
 
         JSeparator lineSeparator = new JSeparator();
         lineSeparator.setBorder(BorderFactory.createEmptyBorder());

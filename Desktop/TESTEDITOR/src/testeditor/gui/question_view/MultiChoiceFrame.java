@@ -16,10 +16,10 @@ import java.util.List;
 
 
 public class MultiChoiceFrame extends QuestionFrame {
-    private List<Answer> aList;
-    private List<JCheckBox> checkBoxList = new ArrayList<>();
-    private List<JSpinner> spinnerList = new ArrayList<>();
-    private JPanel answers = new JPanel();
+    private final List<Answer> aList;
+    private final List<JCheckBox> checkBoxList = new ArrayList<>();
+    private final List<JSpinner> spinnerList = new ArrayList<>();
+    private final JPanel answers = new JPanel();
     private int aCount;
 
     public MultiChoiceFrame(Question q) {
@@ -28,12 +28,12 @@ public class MultiChoiceFrame extends QuestionFrame {
         GridBagLayout gbl = new GridBagLayout();
         answers.setLayout(gbl);
 
-        String [] titles = {
-            "Верно/<br>Неверно",
-            "Вариант ответа",
-            "Комментарий",
-            "Веc, %",
-            "Удалить"
+        String[] titles = {
+                "Верно/<br>Неверно",
+                "Вариант ответа",
+                "Комментарий",
+                "Веc, %",
+                "Удалить"
         };
         addTitles(titles);
 
@@ -53,25 +53,25 @@ public class MultiChoiceFrame extends QuestionFrame {
 
         aCount = aList.size();
         addButton.addActionListener(e -> {
-                                            addAnswer(aCount*2+1, "", "", 0);
-                                            answers.add(new JSeparator(), new GBC(0, aCount*2+2, 9, 1, 0, 0, 0, 0).setFill(GBC.BOTH).setInsets(0, 0, 5, 0));
-                                            aScrollPane.getViewport()
-                                                       .setViewPosition(
-                                                               new Point(aScrollPane.getX(),
-                                                                       aScrollPane.getHeight()));
-                                            answers.updateUI();
-                                            aCount++;
-                                            checkAnswers();
-                                          });
+            addAnswer(aCount * 2 + 1, "", "", 0);
+            answers.add(new JSeparator(), new GBC(0, aCount * 2 + 2, 9, 1, 0, 0, 0, 0).setFill(GBC.BOTH).setInsets(0, 0, 5, 0));
+            aScrollPane.getViewport()
+                    .setViewPosition(
+                            new Point(aScrollPane.getX(),
+                                    aScrollPane.getHeight()));
+            answers.updateUI();
+            aCount++;
+            checkAnswers();
+        });
 
         answerPanel.add(addButtonPanel, BorderLayout.CENTER);
     }
 
     private void addTitles(String[] titles) {
-        for (int colNum=0; colNum < titles.length; colNum++) {
+        for (int colNum = 0; colNum < titles.length; colNum++) {
             answers.add(new JLabel("<html><p><b>" + titles[colNum] + "</b></p></html>"),
-                    new GBC(colNum+colNum, 0, 1, 1, 0, 0, 0, 0).setFill(GBC.HORIZONTAL).setInsets(0, 5, 0, 5));
-            if (colNum+1 != titles.length) {
+                    new GBC(colNum + colNum, 0, 1, 1, 0, 0, 0, 0).setFill(GBC.HORIZONTAL).setInsets(0, 5, 0, 5));
+            if (colNum + 1 != titles.length) {
                 answers.add(new JSeparator(JSeparator.VERTICAL),
                         new GBC(colNum + colNum + 1, 0, 1, 1, 0, 0, 0, 0).setFill(GBC.VERTICAL));
             }
@@ -79,13 +79,13 @@ public class MultiChoiceFrame extends QuestionFrame {
     }
 
     private void addAnswers() {
-        for(int i=0; i < aList.size(); i++) {
-            addAnswer(i+i+2, aList.get(i).getAText(), aList.get(i).getAComment(), aList.get(i).getDegree());
-            answers.add(new JSeparator(), new GBC(0, i+i+3, 9, 1, 0, 0, 0, 0).setFill(GBC.BOTH).setInsets(0, 0, 5, 0));
+        for (int i = 0; i < aList.size(); i++) {
+            addAnswer(i + i + 2, aList.get(i).getAText(), aList.get(i).getAComment(), aList.get(i).getDegree());
+            answers.add(new JSeparator(), new GBC(0, i + i + 3, 9, 1, 0, 0, 0, 0).setFill(GBC.BOTH).setInsets(0, 0, 5, 0));
         }
     }
 
-    private void addAnswer (int pos, String text, String comment, int degree){
+    private void addAnswer(int pos, String text, String comment, int degree) {
         JCheckBox check = new JCheckBox();
         check.setSelected(degree > 0);
         checkBoxList.add(check);
@@ -139,8 +139,8 @@ public class MultiChoiceFrame extends QuestionFrame {
         answers.add(delButton, new GBC(8, pos, 1, 1, 0, 0, 0, 0).setAnchor(GBC.BASELINE).setInsets(5, 10, 5, 5));
     }
 
-    private void deleteAnswer (int delButtonIndex){
-        for(int i=-1; i < getColsNumber(); i++) {
+    private void deleteAnswer(int delButtonIndex) {
+        for (int i = -1; i < getColsNumber(); i++) {
             answers.remove(delButtonIndex - i);
         }
         updateCheckBoxAndSpinners();
@@ -152,7 +152,7 @@ public class MultiChoiceFrame extends QuestionFrame {
     private void updateCheckBoxAndSpinners() {
         checkBoxList.clear();
         spinnerList.clear();
-        for (int i=0; i < answers.getComponentCount(); i++) {
+        for (int i = 0; i < answers.getComponentCount(); i++) {
             JComponent comp = (JComponent) answers.getComponent(i);
             if (comp instanceof JCheckBox) {
                 checkBoxList.add((JCheckBox) comp);
@@ -180,7 +180,7 @@ public class MultiChoiceFrame extends QuestionFrame {
         hintLabel.info(DEFAULT_MESSAGE);
 
         if (countSelected < 2) {
-            spinnerList.stream().forEach(s -> s.setEnabled(false));
+            spinnerList.forEach(s -> s.setEnabled(false));
             if (countSelected == 0) {
                 checkBoxErrorMessage = "Хотя бы один вариант ответа должен быть отмечен, как правильный";
             }
@@ -200,13 +200,12 @@ public class MultiChoiceFrame extends QuestionFrame {
     }
 
 
-
     protected List<Answer> collectAnswers() throws SaveQuestionException {
         List<Answer> aList = new ArrayList<>();
         int cols = getColsNumber();
         int rows = getRowsNumber();
         int compsNumber = 0;
-        for (int i=0; i < rows; i++) {
+        for (int i = 0; i < rows; i++) {
             if (compsNumber == answers.getComponentCount()) {
                 break;
             }
@@ -214,12 +213,12 @@ public class MultiChoiceFrame extends QuestionFrame {
                 compsNumber++;
                 continue;
             }
-            String text ="";
+            String text = "";
             int degree = Answer.MIN_DEGREE;
             String comment = "";
             int textCompCount = 0;
 
-            for (int j=0; j < cols; j++, compsNumber++) {
+            for (int j = 0; j < cols; j++, compsNumber++) {
                 Component comp = answers.getComponent(compsNumber);
                 if (comp instanceof JTextComponent) {
                     if (textCompCount == 0) {
@@ -252,7 +251,7 @@ public class MultiChoiceFrame extends QuestionFrame {
         }
         if (aList.size() == 1)
             throw new SaveQuestionException("Для этого типа вопроса не допустим только один вариант ответа");
-        return  aList;
+        return aList;
     }
 
     private int getColsNumber() {
@@ -260,6 +259,7 @@ public class MultiChoiceFrame extends QuestionFrame {
         int[][] dim = gbl.getLayoutDimensions();
         return dim[0].length;
     }
+
     private int getRowsNumber() {
         GridBagLayout gbl = (GridBagLayout) answers.getLayout();
         int[][] dim = gbl.getLayoutDimensions();

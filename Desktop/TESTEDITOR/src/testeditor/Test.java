@@ -8,15 +8,14 @@ import java.util.List;
 
 
 public class Test extends LinkedHashSet<Question> {
-    private static String filePath = "";
     private static Test t = null;
 
-    private Test() { }
+    private Test() {
+    }
 
     public static void getTestFromFile(String filepath) {
         try {
             t = Parser.parse(filepath);
-            filePath = filepath;
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }
@@ -30,10 +29,6 @@ public class Test extends LinkedHashSet<Question> {
     public static Test createTest() {
         t = new Test();
         return t;
-    }
-
-    public String getFilePath() {
-        return filePath;
     }
 
     public void update(List<Question> list) {

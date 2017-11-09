@@ -2,14 +2,13 @@ package testeditor;
 
 import testeditor.gui.MainFrame;
 import testeditor.question.*;
-import testeditor.saver.Saver;
-import testeditor.saver.XmlSaver;
-
+import testeditor.saver.*;
+import testeditor.parser.*;
 import javax.swing.*;
 import java.awt.*;
 
 
-public class TestEditor {
+class TestEditor {
     public static void main(String[] args) throws Exception {
 
         try {

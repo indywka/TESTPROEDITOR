@@ -19,8 +19,8 @@ import java.util.Collections;
 
 public class TestView extends JPanel {
 
-    private QListModel listModel;  // Модель для компонета JList со списком вопросов
-    private JList<Question> questionList; //Список вопросов
+    private final QListModel listModel;  // Модель для компонета JList со списком вопросов
+    private final JList<Question> questionList; //Список вопросов
     private ControlPanel controlPanel;  // управление файлом теста
     private EditPanel editPanel;  // управление элементами теста
 
@@ -29,7 +29,7 @@ public class TestView extends JPanel {
         listModel = new QListModel();
 
         listModel.addListDataListener(new ListDataListener() {   //чтобы узнать, когда изменится содержмиое модели,
-            // связываем ListDataListner c моделью списка
+            // связываем ListDataListener c моделью списка
             @Override
             public void intervalAdded(ListDataEvent listDataEvent) {
 
@@ -97,9 +97,7 @@ public class TestView extends JPanel {
     public EditPanel getEditPanel() {
         return editPanel;
     }
-    public JList<Question> getQuestionList() {
-        return questionList;
-    }
+
     public ControlPanel getControlPanel() {
         return controlPanel;
     }

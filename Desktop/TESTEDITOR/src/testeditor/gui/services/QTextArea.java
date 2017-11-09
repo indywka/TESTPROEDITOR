@@ -10,12 +10,13 @@ import java.awt.*;
  */
 public class QTextArea extends JTextArea {
     public QTextArea(String s) {
+        super(s);
         setFont(new Font("Sans-Serif", Font.PLAIN, 12));
         Border border = BorderFactory.createLineBorder(new Color(185, 242, 237), 1, true);
         setBorder(BorderFactory.createCompoundBorder(border, BorderFactory.createEmptyBorder(5, 5, 5, 5)));
 
-        setLineWrap(false);
-        setWrapStyleWord(false);
+        setLineWrap(true);
+        setWrapStyleWord(true);
     }
 
     public void changeSize() {

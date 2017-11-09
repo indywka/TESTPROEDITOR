@@ -14,7 +14,7 @@ import java.awt.event.WindowEvent;
  */
 public class CreateQuestionAction extends AbstractAction {
 
-    private JList<Question> list;
+    private final JList<Question> list;
     private Question q = null;
 
     public CreateQuestionAction(JList<Question> qList) {
@@ -40,6 +40,7 @@ public class CreateQuestionAction extends AbstractAction {
                 QListModel listModel = (QListModel) list.getModel();
                 listModel.addElement(CreateQuestionAction.this.q);
                 list.setSelectedIndex(listModel.getSize() - 1);
+
             }
         });
     }
