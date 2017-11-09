@@ -1,13 +1,12 @@
 package testeditor.gui.question_view.actions;
 
+import testeditor.gui.services.QListModel;
 import testeditor.question.Question;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
-/**
- * Класс-слушатель для события открытия файла
- */
+
 public class RemoveQuestionAction extends AbstractAction {
 
     private JList<Question> list;
@@ -21,12 +20,15 @@ public class RemoveQuestionAction extends AbstractAction {
                 "Удалить" +
                 "</html>"
         );
-        this.putValue(Action.SHORT_DESCRIPTION, "Создать новый тест");
+        this.putValue(Action.SHORT_DESCRIPTION, "Удалить вопрос");
     }
 
     public void actionPerformed(ActionEvent event) {
         int index = list.getSelectedIndex();
         DefaultListModel<Question> listModel = (DefaultListModel<Question>) list.getModel();
+        QListModel listModel1 = (QListModel) list.getModel();
+        listModel1.removeElement(list.getModel().getElementAt(index));
+
         listModel.remove(index);
         if (!listModel.isEmpty()) {
             list.setSelectedIndex(0);

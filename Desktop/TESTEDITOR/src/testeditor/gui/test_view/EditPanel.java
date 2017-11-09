@@ -21,7 +21,7 @@ import java.util.List;
 public class EditPanel extends JPanel {
 
     private JButton editButton, createButton;
-    private JList<Question> list;
+    private JList<Question> list;//was final
     private ArrayList<JButton> buttons;
 
     EditPanel(JList<Question> list) {
@@ -72,7 +72,7 @@ public class EditPanel extends JPanel {
      * Группа с кнопками редактирования, создания и удаления вопроса
      */
 
-    public class EditingGroup extends JPanel {
+    class EditingGroup extends JPanel {
         EditingGroup() {
             setBorder(BorderFactory.createCompoundBorder(new EmptyBorder(10, 10, 10, 10),
                     new TitledBorder("Редактировать: ")));
@@ -114,8 +114,8 @@ public class EditPanel extends JPanel {
      * Поле для поиска
      */
 
-    public class FindField extends JPanel {
-        JTextField findText = new JTextField();
+    class FindField extends JPanel {
+        final JTextField findText = new JTextField();
 
         FindField() {
             setLayout(new BorderLayout());
