@@ -1,9 +1,6 @@
 package testeditor.gui.test_view.actions;
 
-import testeditor.Test;
 import testeditor.gui.MainFrame;
-import testeditor.gui.services.QListModel;
-import testeditor.question.Question;
 import testeditor.saver.Saver;
 import testeditor.saver.XmlSaver;
 
@@ -19,11 +16,7 @@ import java.net.URL;
  */
 public class SaveAsTestAction extends AbstractAction {
 
-    private JList<Question> qList;
-
-    public SaveAsTestAction(JList<Question> qList) {
-
-        this.qList = qList;
+    public SaveAsTestAction() {
 
         this.putValue(Action.NAME, "Сохранить как...");
         this.putValue(Action.SHORT_DESCRIPTION, "Сохранить тест как...");
@@ -37,7 +30,7 @@ public class SaveAsTestAction extends AbstractAction {
         //------- Настраиваем диалоговое окно -------//
         saveAsDialog.setCurrentDirectory(new File(".")); //корневая дирректория по умолчанию
         saveAsDialog.setAcceptAllFileFilterUsed(false); //убираем в фильтрах "All files"
-        saveAsDialog.addChoosableFileFilter(new FileNameExtensionFilter("Все поддерживаемые форматы (*.xml)",  "xml"));
+        saveAsDialog.addChoosableFileFilter(new FileNameExtensionFilter("Все поддерживаемые форматы (*.xml)", "xml"));
         saveAsDialog.addChoosableFileFilter(new FileNameExtensionFilter("XML Moodle test (*.xml)", "xml"));
         saveAsDialog.setDialogTitle("Сохранить как...");
         saveAsDialog.setApproveButtonToolTipText("Сохранить тест");
@@ -49,6 +42,7 @@ public class SaveAsTestAction extends AbstractAction {
         MainFrame parentFrame = (MainFrame) SwingUtilities.getRoot((Component) event.getSource());
 
         //------- Обрабатываем файл теста -------//
+
         int result = saveAsDialog.showDialog(parentFrame, "Сохранить");
         if (result == JFileChooser.APPROVE_OPTION) {
             Saver s;
@@ -64,11 +58,7 @@ public class SaveAsTestAction extends AbstractAction {
                 ex.printStackTrace();
             }
 
-            Test.getTestFromFile(path);
-            ((QListModel) qList.getModel()).update(qList);
-            qList.setSelectedIndex(0);
-
-            parentFrame.setTitle(saveAsDialog.getSelectedFile().getName() + " - ");
+            parentFrame.setTitle(saveAsDialog.getSelectedFile().getName());
 
         }
     }

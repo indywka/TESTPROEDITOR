@@ -42,7 +42,6 @@ public class ListRenderer extends JPanel implements ListCellRenderer<Question> {
                 .setInsets(10, 5, 10, 10));
 
 
-
         JSeparator lineSeparator = new JSeparator();
         lineSeparator.setBorder(BorderFactory.createEmptyBorder());
         add(lineSeparator, new GBC(0, 1, 5, 1, 0, 0, 100, 0).setFill(GBC.HORIZONTAL));

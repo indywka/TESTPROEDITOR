@@ -1,9 +1,7 @@
 package testeditor;
 
 import testeditor.gui.MainFrame;
-import testeditor.question.*;
-import testeditor.saver.*;
-import testeditor.parser.*;
+
 import javax.swing.*;
 import java.awt.*;
 

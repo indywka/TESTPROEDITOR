@@ -28,7 +28,7 @@ public class ControlPanel extends JPanel {
         JButton openButton = new VerticalButton(new OpenTestAction(questionList));
         add(openButton);
 
-        saveAsButton = new VerticalButton(new SaveAsTestAction(questionList));
+        saveAsButton = new VerticalButton(new SaveAsTestAction());
         saveAsButton.setEnabled(false);
         add(saveAsButton);
 
