@@ -1,10 +1,10 @@
-package testeditor.gui.question_view;
+package testeditor.view.question.view;
 
-import testeditor.gui.services.GBC;
-import testeditor.gui.services.QTextArea;
-import testeditor.gui.services.exceptions.SaveQuestionException;
 import testeditor.question.Answer;
 import testeditor.question.Question;
+import testeditor.view.beauty.classes.GBC;
+import testeditor.view.beauty.classes.QTextArea;
+import testeditor.view.beauty.classes.error.message.SaveQuestionException;
 
 import javax.swing.*;
 import javax.swing.text.JTextComponent;
@@ -31,8 +31,8 @@ public class MultiChoiceFrame extends QuestionFrame {
         String[] titles = {
                 "Верно/<br>Неверно",
                 "Вариант ответа",
-                "Комментарий",
-                "Веc, %",
+                "-",
+                "-",
                 "Удалить"
         };
         addTitles(titles);
@@ -53,7 +53,7 @@ public class MultiChoiceFrame extends QuestionFrame {
 
         aCount = aList.size();
         addButton.addActionListener(e -> {
-            addAnswer(aCount * 2 + 1, "", "", 0);
+            addAnswerAtAnswerPanel(aCount * 2 + 1, "", 0);
             answers.add(new JSeparator(), new GBC(0, aCount * 2 + 2, 9, 1, 0, 0, 0, 0).setFill(GBC.BOTH).setInsets(0, 0, 5, 0));
             aScrollPane.getViewport()
                     .setViewPosition(
@@ -80,12 +80,12 @@ public class MultiChoiceFrame extends QuestionFrame {
 
     private void addAnswers() {
         for (int i = 0; i < aList.size(); i++) {
-            addAnswer(i + i + 2, aList.get(i).getAText(), aList.get(i).getAComment(), aList.get(i).getDegree());
+            addAnswerAtAnswerPanel(i + i + 2, aList.get(i).getAText(), aList.get(i).getDegree());
             answers.add(new JSeparator(), new GBC(0, i + i + 3, 9, 1, 0, 0, 0, 0).setFill(GBC.BOTH).setInsets(0, 0, 5, 0));
         }
     }
 
-    private void addAnswer(int pos, String text, String comment, int degree) {
+    private void addAnswerAtAnswerPanel(int pos, String text, int degree) {
         JCheckBox check = new JCheckBox();
         check.setSelected(degree > 0);
         checkBoxList.add(check);
@@ -118,20 +118,14 @@ public class MultiChoiceFrame extends QuestionFrame {
         answers.add(answerText, new GBC(2, pos, 1, 1, 0, 0, 100, 100).setFill(GBC.BOTH).setInsets(5, 5, 5, 5));
         answers.add(new JSeparator(JSeparator.VERTICAL), new GBC(3, pos, 1, 1, 0, 0, 0, 0).setFill(GBC.VERTICAL));
 
-        QTextArea commentText = new QTextArea(comment);
-        answers.add(commentText, new GBC(4, pos, 1, 1, 0, 0, 0, 0).setFill(GBC.BOTH).setInsets(5, 5, 5, 5));
+
+        answers.add(new JSeparator(), new GBC(4, pos, 1, 1, 0, 0, 0, 0).setFill(GBC.BOTH).setInsets(5, 5, 5, 5));
         answers.add(new JSeparator(JSeparator.VERTICAL), new GBC(5, pos, 1, 1, 0, 0, 0, 0).setFill(GBC.VERTICAL));
-
-        SpinnerNumberModel spinnerNumberModel = new SpinnerNumberModel(0, 0, 100, 1);
-
-        JSpinner degreeSpinner = new JSpinner(spinnerNumberModel);
-        degreeSpinner.setValue(degree);
-        spinnerList.add(degreeSpinner);
-        degreeSpinner.setEnabled(degree > 0);
 
 
         getSaveButton().setEnabled(false);
-        answers.add(degreeSpinner, new GBC(6, pos, 1, 1, 0, 0, 0, 0).setAnchor(GBC.BASELINE).setFill(GBC.HORIZONTAL).setInsets(5, 5, 5, 5));
+        answers.add(new JSeparator()
+                , new GBC(6, pos, 1, 1, 0, 0, 0, 0).setAnchor(GBC.BASELINE).setFill(GBC.HORIZONTAL).setInsets(5, 5, 5, 5));
         answers.add(new JSeparator(JSeparator.VERTICAL), new GBC(7, pos, 1, 1, 0, 0, 0, 0).setFill(GBC.VERTICAL));
 
         JButton delButton = new JButton("<html><font color='red'><b>&nbsp;&#10006;&nbsp;</b></font></html>");
@@ -143,21 +137,18 @@ public class MultiChoiceFrame extends QuestionFrame {
         for (int i = -1; i < getColsNumber(); i++) {
             answers.remove(delButtonIndex - i);
         }
-        updateCheckBoxAndSpinners();
+        updateCheckBox();
         answers.updateUI();
         aCount--;
         checkAnswers();
     }
 
-    private void updateCheckBoxAndSpinners() {
+    private void updateCheckBox() {
         checkBoxList.clear();
-        spinnerList.clear();
         for (int i = 0; i < answers.getComponentCount(); i++) {
             JComponent comp = (JComponent) answers.getComponent(i);
             if (comp instanceof JCheckBox) {
                 checkBoxList.add((JCheckBox) comp);
-            } else if (comp instanceof JSpinner) {
-                spinnerList.add((JSpinner) comp);
             }
         }
     }
@@ -168,37 +159,29 @@ public class MultiChoiceFrame extends QuestionFrame {
 
         for (JCheckBox checkBox : checkBoxList) {
             if (checkBox.isSelected()) {
+                getSaveButton().setEnabled(true);
                 countSelected += 1;
             }
         }
-
-        String spinnerErrorMessage = "";
-        if (spinnerErrorMessage.isEmpty()) {
-            getSaveButton().setEnabled(true);
+        if (countSelected == 0) {
+            getSaveButton().setEnabled(false);
         }
 
-        hintLabel.info(DEFAULT_MESSAGE);
 
-        if (countSelected < 2) {
-            spinnerList.forEach(s -> s.setEnabled(false));
-            if (countSelected == 0) {
-                checkBoxErrorMessage = "Хотя бы один вариант ответа должен быть отмечен, как правильный";
-            }
+        ErrorLabel.info(DEFAULT_MESSAGE);
+
+        if (countSelected < 2 && countSelected == 0) {
+            checkBoxErrorMessage = "Хотя бы один вариант ответа должен быть отмечен, как правильный";
         } else {
             if (checkBoxList.stream().allMatch(JCheckBox::isSelected)) {
                 checkBoxErrorMessage = "Все варианты ответа не могут быть правильными";
             }
         }
-        if (checkBoxErrorMessage.isEmpty()) {
-            if (spinnerErrorMessage.isEmpty()) {
-                getSaveButton().setEnabled(true);
-            }
-        } else {
-            hintLabel.error(checkBoxErrorMessage);
+        if (!checkBoxErrorMessage.isEmpty()) {
+            ErrorLabel.error(checkBoxErrorMessage);
         }
 
     }
-
 
     protected List<Answer> collectAnswers() throws SaveQuestionException {
         List<Answer> aList = new ArrayList<>();
@@ -215,7 +198,6 @@ public class MultiChoiceFrame extends QuestionFrame {
             }
             String text = "";
             int degree = Answer.MIN_DEGREE;
-            String comment = "";
             int textCompCount = 0;
 
             for (int j = 0; j < cols; j++, compsNumber++) {
@@ -224,21 +206,19 @@ public class MultiChoiceFrame extends QuestionFrame {
                     if (textCompCount == 0) {
                         text = ((JTextComponent) comp).getText();
                         textCompCount++;
-                    } else {
-                        comment = ((JTextComponent) comp).getText();
                     }
                 } else if (comp instanceof JCheckBox) {
                     if (((JCheckBox) comp).isSelected()) {
                         degree = Answer.MAX_DEGREE;
-                        updateCheckBoxAndSpinners();
+                        updateCheckBox();
                     } else {
                         degree = Answer.MIN_DEGREE;
-                        updateCheckBoxAndSpinners();
+                        updateCheckBox();
                     }
                 }
             }
             if (!text.isEmpty()) {
-                aList.add(new Answer(text, degree, comment));
+                aList.add(new Answer(text, degree));
             } else if (degree != 0) {
                 throw new SaveQuestionException("Вы оставили пустым отмеченный вариант ответа");
             }

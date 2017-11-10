@@ -1,17 +1,13 @@
-package testeditor.gui.test_view;
+package testeditor.view.test.view;
 
-import testeditor.gui.services.VerticalButton;
-import testeditor.gui.test_view.actions.CreateTestAction;
-import testeditor.gui.test_view.actions.OpenTestAction;
-import testeditor.gui.test_view.actions.SaveAsTestAction;
+import testeditor.view.beauty.classes.VerticalButton;
+import testeditor.view.test.view.actions.controlpanel.CreateTestAction;
+import testeditor.view.test.view.actions.controlpanel.OpenTestAction;
+import testeditor.view.test.view.actions.controlpanel.SaveAsTestAction;
 import testeditor.question.Question;
 
 import javax.swing.*;
 import java.awt.*;
-
-/**
- * Панель для управления созданием, открытием и сохранением теста
- */
 
 public class ControlPanel extends JPanel {
 

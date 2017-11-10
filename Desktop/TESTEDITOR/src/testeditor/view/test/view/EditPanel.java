@@ -1,10 +1,10 @@
-package testeditor.gui.test_view;
+package testeditor.view.test.view;
 
-import testeditor.gui.question_view.actions.CreateQuestionAction;
-import testeditor.gui.question_view.actions.EditQuestionAction;
-import testeditor.gui.question_view.actions.RemoveQuestionAction;
-import testeditor.gui.services.EditPanelButton;
 import testeditor.question.Question;
+import testeditor.view.beauty.classes.EditPanelButton;
+import testeditor.view.question.view.actions.editpanel.CreateQuestionAction;
+import testeditor.view.question.view.actions.editpanel.EditQuestionAction;
+import testeditor.view.question.view.actions.editpanel.RemoveQuestionAction;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -14,14 +14,11 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Панель управления элементами списка
- */
 
 public class EditPanel extends JPanel {
 
     private JButton editButton, createButton;
-    private JList<Question> list;//was final
+    private JList<Question> list;
     private ArrayList<JButton> buttons;
 
     EditPanel(JList<Question> list) {

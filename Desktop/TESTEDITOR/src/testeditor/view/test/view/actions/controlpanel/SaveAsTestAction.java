@@ -1,8 +1,8 @@
-package testeditor.gui.test_view.actions;
+package testeditor.view.test.view.actions.controlpanel;
 
-import testeditor.gui.MainFrame;
 import testeditor.saver.Saver;
 import testeditor.saver.XmlSaver;
+import testeditor.view.MainFrame;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -20,14 +20,14 @@ public class SaveAsTestAction extends AbstractAction {
 
         this.putValue(Action.NAME, "Сохранить как...");
         this.putValue(Action.SHORT_DESCRIPTION, "Сохранить тест как...");
-        URL imageURL = getClass().getResource("/testeditor/gui/img/save_as.png");
+        URL imageURL = getClass().getResource("/testeditor/view/icons/save_as.png");
         this.putValue(Action.SMALL_ICON, new ImageIcon(imageURL));
     }
 
     public void actionPerformed(ActionEvent event) {
         JFileChooser saveAsDialog = new JFileChooser(); // объект диалогового окна
 
-        //------- Настраиваем диалоговое окно -------//
+        //Настраиваем диалоговое окно
         saveAsDialog.setCurrentDirectory(new File(".")); //корневая дирректория по умолчанию
         saveAsDialog.setAcceptAllFileFilterUsed(false); //убираем в фильтрах "All files"
         saveAsDialog.addChoosableFileFilter(new FileNameExtensionFilter("Все поддерживаемые форматы (*.xml)", "xml"));
@@ -41,7 +41,7 @@ public class SaveAsTestAction extends AbstractAction {
 
         MainFrame parentFrame = (MainFrame) SwingUtilities.getRoot((Component) event.getSource());
 
-        //------- Обрабатываем файл теста -------//
+//Обрабатываем файл теста
 
         int result = saveAsDialog.showDialog(parentFrame, "Сохранить");
         if (result == JFileChooser.APPROVE_OPTION) {

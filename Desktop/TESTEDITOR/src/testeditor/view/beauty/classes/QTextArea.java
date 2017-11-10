@@ -1,13 +1,11 @@
-package testeditor.gui.services;
+package testeditor.view.beauty.classes;
 
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.text.BadLocationException;
 import java.awt.*;
 
-/**
 
- */
 public class QTextArea extends JTextArea {
     public QTextArea(String s) {
         super(s);

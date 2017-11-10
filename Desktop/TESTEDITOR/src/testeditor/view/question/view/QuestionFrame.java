@@ -1,12 +1,12 @@
-package testeditor.gui.question_view;
+package testeditor.view.question.view;
 
-import testeditor.gui.BaseMainFrame;
-import testeditor.gui.services.HintLabel;
-import testeditor.gui.services.QLabel;
-import testeditor.gui.services.QTextArea;
-import testeditor.gui.services.exceptions.SaveQuestionException;
 import testeditor.question.Answer;
 import testeditor.question.Question;
+import testeditor.view.BaseMainFrame;
+import testeditor.view.beauty.classes.QLabel;
+import testeditor.view.beauty.classes.QTextArea;
+import testeditor.view.beauty.classes.error.message.SaveQuestionException;
+import testeditor.view.beauty.classes.ErrorLabel;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -15,7 +15,6 @@ import javax.swing.text.JTextComponent;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
-
 
 import static javax.swing.GroupLayout.Alignment.BASELINE;
 import static javax.swing.GroupLayout.Alignment.LEADING;
@@ -30,7 +29,7 @@ abstract public class QuestionFrame extends BaseMainFrame {
     final ArrayList<JTextComponent> fields = new ArrayList<>();
 
     final JScrollPane aScrollPane;
-    final HintLabel hintLabel;
+    final ErrorLabel ErrorLabel;
     private final Question question;
     private final QTextArea nameTextArea;
 
@@ -104,7 +103,7 @@ abstract public class QuestionFrame extends BaseMainFrame {
         JPanel savePanel = new JPanel();
         savePanel.setLayout(new FlowLayout(FlowLayout.RIGHT, 5, 10));
 
-        saveButton = new JButton("Сохранить", new ImageIcon("src/testeditor/gui/img/save.png"));
+        saveButton = new JButton("Сохранить", new ImageIcon("src/testeditor/view/icons/save.png"));
         saveButton.addActionListener(e -> saveQuestion());
 
         JButton cancelButton = new JButton("Отмена", UIManager.getIcon("FileChooser.cancelIcon"));
@@ -116,9 +115,9 @@ abstract public class QuestionFrame extends BaseMainFrame {
         JPanel hintPanel = new JPanel();
         hintPanel.setLayout(new BorderLayout());
 
-        hintLabel = new HintLabel();
-        hintLabel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        hintPanel.add(hintLabel);
+        ErrorLabel = new ErrorLabel();
+        ErrorLabel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        hintPanel.add(ErrorLabel);
 
         JPanel bottomPanel = new JPanel();
         bottomPanel.setLayout(new BorderLayout());
@@ -162,5 +161,5 @@ abstract public class QuestionFrame extends BaseMainFrame {
         return saveButton;
     }
 
-    abstract protected List<Answer> collectAnswers() throws SaveQuestionException;
+    abstract List<Answer> collectAnswers() throws SaveQuestionException;
 }

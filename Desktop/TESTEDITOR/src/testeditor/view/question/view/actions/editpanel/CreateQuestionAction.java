@@ -1,8 +1,8 @@
 package testeditor.view.question.view.actions.editpanel;
 
-import testeditor.view.beauty.classes.QListModel;
 import testeditor.question.MultiChoice;
 import testeditor.question.Question;
+import testeditor.view.beauty.classes.QListModel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

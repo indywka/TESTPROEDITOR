@@ -1,8 +1,8 @@
 package testeditor.question;
 
-import testeditor.gui.question_view.MultiChoiceFrame;
-import testeditor.gui.question_view.QuestionFrame;
 import testeditor.saver.Saver;
+import testeditor.view.question.view.MultiChoiceFrame;
+import testeditor.view.question.view.QuestionFrame;
 
 import java.util.Collections;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
 
 public class MultiChoice extends Question {
 
-    public MultiChoice(String qName, String qText, List<Answer> answers) {
+    private MultiChoice(String qName, String qText, List<Answer> answers) {
         super(qName, qText, answers);
     }
 
