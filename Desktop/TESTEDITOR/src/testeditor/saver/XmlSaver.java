@@ -8,6 +8,7 @@ import testeditor.question.Question;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
@@ -18,6 +19,7 @@ import java.util.List;
 
 
 public class XmlSaver extends Saver {
+
     private Document doc;
 
     public XmlSaver(String filepath) throws Exception {
@@ -34,7 +36,7 @@ public class XmlSaver extends Saver {
         questionElement.setAttribute("type", "multichoice");
 
         questionElement = setTextField(questionElement, q.getQName());
-        questionElement = setTextFieldWithCData(questionElement, q.getQHead());
+        questionElement = setTextField(questionElement, q.getQText());
 
         List<Answer> answerList = q.getAnswerList();
 
@@ -43,7 +45,7 @@ public class XmlSaver extends Saver {
             AnswerElement.setAttribute("fraction", String.valueOf(anAnswerList.getDegree()));
 
             Element AnswerTextElement = doc.createElement("text");
-            CDATASection AnswerTextSection = doc.createCDATASection(String.valueOf(anAnswerList.getDegree()));
+            CDATASection AnswerTextSection = doc.createCDATASection(String.valueOf(anAnswerList.getAText()));
             AnswerTextElement.appendChild(AnswerTextSection);
 
             AnswerElement.appendChild(AnswerTextElement);
@@ -53,36 +55,11 @@ public class XmlSaver extends Saver {
         return xmlToString(questionElement);
     }
 
-    @Override
-    public String doLineForShortAnswer(Question q) {
-        Element questionElement = doc.createElement("question");
-        questionElement.setAttribute("type", "shortanswer");
-
-        questionElement = setTextField(questionElement, q.getQName());
-        questionElement = setTextFieldWithCData(questionElement, q.getQHead());
-
-        List<Answer> answerList = q.getAnswerList();
-
-        for (Answer anAnswerList : answerList) {
-            Element AnswerElement = doc.createElement("answer");
-            AnswerElement.setAttribute("fraction", String.valueOf(anAnswerList.getDegree()));
-
-            Element AnswerTextElement = doc.createElement("text");
-            AnswerTextElement.setNodeValue(String.valueOf(anAnswerList.getDegree()));
-
-            AnswerElement.appendChild(AnswerTextElement);
-            questionElement.appendChild(AnswerElement);
-        }
-
-        return xmlToString(questionElement);
-    }
-
-
     private String xmlToString(Element questionElement) {
         try {
             TransformerFactory tf = TransformerFactory.newInstance();
             Transformer tr = tf.newTransformer();
-            //tr.setOutputProperty(OutputKeys.INDENT, "yes");
+            tr.setOutputProperty(OutputKeys.INDENT, "yes");
             StringWriter wr = new StringWriter();
             tr.transform(new DOMSource(questionElement), new StreamResult(wr));
 
@@ -102,17 +79,6 @@ public class XmlSaver extends Saver {
 
         return questionElement;
     }
-
-    private Element setTextFieldWithCData(Element questionElement,
-                                          String value) {
-        Element HeadElement = doc.createElement("name");
-        HeadElement.setAttribute("format", "html");
-        Element HeadTextElement = doc.createElement("text");
-        CDATASection HeadTextSection = doc.createCDATASection(value);
-        HeadTextElement.appendChild(HeadTextSection);
-        HeadElement.appendChild(HeadTextElement);
-        questionElement.appendChild(HeadElement);
-
-        return questionElement;
-    }
 }
+
+

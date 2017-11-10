@@ -1,6 +1,6 @@
 package testeditor;
 
-import testeditor.gui.MainFrame;
+import testeditor.view.MainFrame;
 
 import javax.swing.*;
 import java.awt.*;

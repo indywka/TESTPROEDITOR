@@ -10,9 +10,9 @@ import java.io.PrintWriter;
 /**
  * абстрактный класс, содержащий методы сохранения теста в файл
  */
-abstract public class Saver {
+public abstract class Saver {
 
-    private String filepath;
+    private final String filepath;
 
     Saver(String filepath) {
         this.filepath = filepath;
@@ -21,7 +21,7 @@ abstract public class Saver {
     /**
      * Запись теста в файл
      *
-     * @param answersText - строка для записи
+     *  answersText - строка для записи
      */
     private void toFile(String answersText) {
 
@@ -49,13 +49,12 @@ abstract public class Saver {
     private String getText() {
         StringBuilder text = new StringBuilder();
         for (Question q : Test.getTest()) {
-            text.append(q.getLine(this)).append("\n\n");
+            text.append(q.getLine(this)).append("");
         }
         return text.toString();
     }
 
     abstract public String doLineForMultiChoice(Question q);
 
-    abstract public String doLineForShortAnswer(Question q);
 
 }

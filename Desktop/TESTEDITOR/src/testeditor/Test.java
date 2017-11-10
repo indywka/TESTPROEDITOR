@@ -10,8 +10,6 @@ import java.util.List;
 public class Test extends LinkedHashSet<Question> {
     private static Test t = null;
 
-    private Test() {
-    }
 
     public static void getTestFromFile(String filepath) {
         try {
