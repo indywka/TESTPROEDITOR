@@ -10,9 +10,7 @@ class TestEditor {
     public static void main(String[] args) throws Exception {
 
         try {
-            if (isWindows()) {
-                UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
-            }
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
         } catch (UnsupportedLookAndFeelException | IllegalAccessException | InstantiationException | ClassNotFoundException e) {
             System.err.println("Проблема с установкой темы ");
         }
@@ -23,10 +21,4 @@ class TestEditor {
             testFrame.setVisible(true);
         });
     }
-
-    private static boolean isWindows() {
-        String os = System.getProperty("os.name").toLowerCase();
-        return (os.contains("win"));
-    }
-
 }

@@ -1,17 +1,17 @@
 package testeditor.view.test.view;
 
-import testeditor.view.beauty.classes.VerticalButton;
-import testeditor.view.test.view.actions.controlpanel.CreateTestAction;
-import testeditor.view.test.view.actions.controlpanel.OpenTestAction;
-import testeditor.view.test.view.actions.controlpanel.SaveAsTestAction;
 import testeditor.question.Question;
+import testeditor.view.test.view.actions.controlpanel.*;
+import testeditor.view.beauty.classes.*;
 
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Панель для управления созданием, открытием и сохранением теста
+ */
 public class ControlPanel extends JPanel {
-
-    private final JButton saveAsButton;
+    private JButton saveAsButton;
 
 
     ControlPanel(JList<Question> questionList) {
@@ -27,8 +27,6 @@ public class ControlPanel extends JPanel {
         saveAsButton = new VerticalButton(new SaveAsTestAction());
         saveAsButton.setEnabled(false);
         add(saveAsButton);
-
-
     }
 
     public JButton getSaveAsButton() {

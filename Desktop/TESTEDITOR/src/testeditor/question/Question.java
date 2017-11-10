@@ -1,27 +1,34 @@
 package testeditor.question;
 
-import testeditor.saver.Saver;
-import testeditor.view.question.view.QuestionFrame;
+import testeditor.view.question.view.*;
+import testeditor.saver.*;
 
 import java.util.List;
+
 
 abstract public class Question {
 
     private String qText;
     private String qName;
     private List<Answer> answers;
-    ;
 
     /**
-     * qText   - заголовок вопроса
-     * answers - списочный массив вариантов ответа к вопросу
+     * @param qText   - заголовок вопроса
+     * @param answers - списочный массив вариантов ответа к вопросу
      */
     Question(String qName, String qText, List<Answer> answers) {
         this.answers = answers;
-        answers.listIterator(); // to reset previously moved iterator
+        answers.listIterator();
         this.qText = qText.trim();
         this.qName = qName;
 
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) return false;
+        else if (!(obj instanceof Question)) return false;
+        return this.getQHead().equals(((Question) obj).getQHead());
     }
 
     public String getQHead() {

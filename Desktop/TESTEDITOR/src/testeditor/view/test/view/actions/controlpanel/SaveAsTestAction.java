@@ -3,7 +3,7 @@ package testeditor.view.test.view.actions.controlpanel;
 import testeditor.saver.Saver;
 import testeditor.saver.XmlSaver;
 import testeditor.view.MainFrame;
-
+import testeditor.question.*;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
@@ -27,7 +27,7 @@ public class SaveAsTestAction extends AbstractAction {
     public void actionPerformed(ActionEvent event) {
         JFileChooser saveAsDialog = new JFileChooser(); // объект диалогового окна
 
-        //Настраиваем диалоговое окно
+        //------- Настраиваем диалоговое окно -------//
         saveAsDialog.setCurrentDirectory(new File(".")); //корневая дирректория по умолчанию
         saveAsDialog.setAcceptAllFileFilterUsed(false); //убираем в фильтрах "All files"
         saveAsDialog.addChoosableFileFilter(new FileNameExtensionFilter("Все поддерживаемые форматы (*.xml)", "xml"));
@@ -41,7 +41,7 @@ public class SaveAsTestAction extends AbstractAction {
 
         MainFrame parentFrame = (MainFrame) SwingUtilities.getRoot((Component) event.getSource());
 
-//Обрабатываем файл теста
+        //------- Обрабатываем файл теста -------//
 
         int result = saveAsDialog.showDialog(parentFrame, "Сохранить");
         if (result == JFileChooser.APPROVE_OPTION) {
@@ -63,3 +63,5 @@ public class SaveAsTestAction extends AbstractAction {
         }
     }
 }
+
+

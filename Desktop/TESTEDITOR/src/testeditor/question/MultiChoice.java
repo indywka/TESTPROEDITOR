@@ -1,8 +1,7 @@
 package testeditor.question;
 
+import testeditor.view.question.view.*;
 import testeditor.saver.Saver;
-import testeditor.view.question.view.MultiChoiceFrame;
-import testeditor.view.question.view.QuestionFrame;
 
 import java.util.Collections;
 import java.util.List;
