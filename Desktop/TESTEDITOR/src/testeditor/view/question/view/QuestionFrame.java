@@ -3,10 +3,10 @@ package testeditor.view.question.view;
 import testeditor.question.Answer;
 import testeditor.question.Question;
 import testeditor.view.BaseMainFrame;
+import testeditor.view.beauty.classes.ErrorLabel;
 import testeditor.view.beauty.classes.QLabel;
 import testeditor.view.beauty.classes.QTextArea;
 import testeditor.view.beauty.classes.error.message.SaveQuestionException;
-import testeditor.view.beauty.classes.ErrorLabel;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -103,7 +103,7 @@ abstract public class QuestionFrame extends BaseMainFrame {
         JPanel savePanel = new JPanel();
         savePanel.setLayout(new FlowLayout(FlowLayout.RIGHT, 5, 10));
 
-        saveButton = new JButton("Сохранить", new ImageIcon("src/testeditor/view/icons/save.png"));
+        saveButton = new JButton("Сохранить", new ImageIcon("src/testeditor/view/icons/getTest.png"));
         saveButton.addActionListener(e -> saveQuestion());
 
         JButton cancelButton = new JButton("Отмена", UIManager.getIcon("FileChooser.cancelIcon"));

@@ -19,7 +19,6 @@ public class QListModel extends DefaultListModel<Question> implements DocumentLi
 
     private String lastFilter = "";
 
-
     public void addElement(Question question) {
         defaultList.add(question);
         filter(lastFilter);

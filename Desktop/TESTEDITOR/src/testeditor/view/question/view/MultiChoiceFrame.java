@@ -161,12 +161,12 @@ public class MultiChoiceFrame extends QuestionFrame {
             if (checkBox.isSelected()) {
                 getSaveButton().setEnabled(true);
                 countSelected += 1;
+
             }
         }
         if (countSelected == 0) {
             getSaveButton().setEnabled(false);
         }
-
 
         ErrorLabel.info(DEFAULT_MESSAGE);
 
@@ -175,6 +175,7 @@ public class MultiChoiceFrame extends QuestionFrame {
         } else {
             if (checkBoxList.stream().allMatch(JCheckBox::isSelected)) {
                 checkBoxErrorMessage = "Все варианты ответа не могут быть правильными";
+                getSaveButton().setEnabled(false);
             }
         }
         if (!checkBoxErrorMessage.isEmpty()) {

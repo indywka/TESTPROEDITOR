@@ -1,8 +1,10 @@
 package testeditor.view.test.view;
 
 import testeditor.question.Question;
-import testeditor.view.test.view.actions.controlpanel.*;
-import testeditor.view.beauty.classes.*;
+import testeditor.view.beauty.classes.VerticalButton;
+import testeditor.view.test.view.actions.controlpanel.CreateTestAction;
+import testeditor.view.test.view.actions.controlpanel.OpenTestAction;
+import testeditor.view.test.view.actions.controlpanel.SaveAsTestAction;
 
 import javax.swing.*;
 import java.awt.*;

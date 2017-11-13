@@ -1,9 +1,9 @@
 package testeditor.view.test.view;
 
 import testeditor.Test;
+import testeditor.question.Question;
 import testeditor.view.beauty.classes.ListRenderer;
 import testeditor.view.beauty.classes.QListModel;
-import testeditor.question.Question;
 
 import javax.swing.*;
 import javax.swing.event.ListDataEvent;
@@ -20,7 +20,7 @@ import java.util.Collections;
 public class TestView extends JPanel {
 
     private final QListModel listModel;  // Модель для компонета JList со списком вопросов
-    private final JList<Question> questionList; //Список вопросов
+    public JList<Question> questionList; //Список вопросов
     private ControlPanel controlPanel;  // управление файлом теста
     private EditPanel editPanel;  // управление элементами теста
 

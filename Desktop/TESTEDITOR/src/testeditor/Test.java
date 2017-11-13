@@ -1,22 +1,15 @@
 package testeditor;
 
-import testeditor.parser.Parser;
 import testeditor.question.Question;
 
 import java.util.LinkedHashSet;
 import java.util.List;
 
-
 public class Test extends LinkedHashSet<Question> {
+    private static String filePath = "";
     private static Test t = null;
 
-
-    public static void getTestFromFile(String filepath) {
-        try {
-            t = Parser.parse(filepath);
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
-        }
+    private Test() {
     }
 
     public static Test getTest() {
@@ -27,6 +20,10 @@ public class Test extends LinkedHashSet<Question> {
     public static Test createTest() {
         t = new Test();
         return t;
+    }
+
+    public String getFilePath() {
+        return filePath;
     }
 
     public void update(List<Question> list) {

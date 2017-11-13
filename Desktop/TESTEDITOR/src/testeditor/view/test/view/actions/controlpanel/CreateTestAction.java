@@ -1,12 +1,12 @@
 package testeditor.view.test.view.actions.controlpanel;
 
-import testeditor.view.MainFrame;
-import testeditor.view.test.view.TestView;
 import testeditor.Test;
+import testeditor.question.Question;
+import testeditor.view.MainFrame;
 import testeditor.view.beauty.classes.QListModel;
 import testeditor.view.test.view.ControlPanel;
 import testeditor.view.test.view.EditPanel;
-import testeditor.question.Question;
+import testeditor.view.test.view.TestView;
 
 import javax.swing.*;
 import java.awt.*;

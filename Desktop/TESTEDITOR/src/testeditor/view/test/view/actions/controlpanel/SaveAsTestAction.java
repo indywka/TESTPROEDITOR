@@ -1,19 +1,16 @@
 package testeditor.view.test.view.actions.controlpanel;
 
-import testeditor.saver.Saver;
-import testeditor.saver.XmlSaver;
 import testeditor.view.MainFrame;
-import testeditor.question.*;
+import testeditor.xml.XMLFile;
+
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.io.File;
+import java.io.ObjectInputStream;
 import java.net.URL;
 
-/**
- * Класс-слушатель для события открытия файла
- */
 public class SaveAsTestAction extends AbstractAction {
 
     public SaveAsTestAction() {
@@ -42,26 +39,15 @@ public class SaveAsTestAction extends AbstractAction {
         MainFrame parentFrame = (MainFrame) SwingUtilities.getRoot((Component) event.getSource());
 
         //------- Обрабатываем файл теста -------//
-
         int result = saveAsDialog.showDialog(parentFrame, "Сохранить");
         if (result == JFileChooser.APPROVE_OPTION) {
-            Saver s;
-            String path = saveAsDialog.getSelectedFile().getAbsolutePath();
             try {
-                if (path.toLowerCase().endsWith(".xml")) {
-                    s = new XmlSaver(path);
-                } else {
-                    throw new Exception("Выбранное разрешение не соответствует поддерживаемым форматам файлов");
-                }
+                XMLFile s = new XMLFile(saveAsDialog.getSelectedFile().getPath());
                 s.save();
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
-
             parentFrame.setTitle(saveAsDialog.getSelectedFile().getName());
-
         }
     }
 }
-
-

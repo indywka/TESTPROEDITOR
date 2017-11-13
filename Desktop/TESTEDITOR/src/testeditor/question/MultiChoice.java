@@ -1,7 +1,7 @@
 package testeditor.question;
 
-import testeditor.view.question.view.*;
-import testeditor.saver.Saver;
+import testeditor.view.question.view.MultiChoiceFrame;
+import testeditor.view.question.view.QuestionFrame;
 
 import java.util.Collections;
 import java.util.List;
@@ -17,8 +17,8 @@ public class MultiChoice extends Question {
         this("", "", Collections.singletonList(new Answer()));
     }
 
-    public String getLine(Saver saver) {
-        return saver.doLineForMultiChoice(this);
+    public MultiChoice(String qName, String qText) {
+        super(qName, qText);
     }
 
     public QuestionFrame getFrame() {
