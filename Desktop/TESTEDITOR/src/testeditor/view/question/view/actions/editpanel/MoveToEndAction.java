@@ -5,9 +5,6 @@ import testeditor.question.Question;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
-/**
- * Created by main on 04.04.16.
- */
 public class MoveToEndAction extends MoveAction {
 
     public MoveToEndAction(JList<Question> qList, String title, String html_icon) {
@@ -16,7 +13,7 @@ public class MoveToEndAction extends MoveAction {
 
     @Override
     public void actionPerformed(ActionEvent event) {
-        swapElements(list.getSelectedIndex(), list.getModel().getSize() - 1);
+        putQuestionToTheEnd(list.getSelectedValue());
         list.setSelectedIndex(list.getModel().getSize() - 1);
         list.updateUI();
     }

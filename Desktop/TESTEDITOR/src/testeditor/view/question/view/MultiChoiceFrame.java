@@ -87,7 +87,7 @@ public class MultiChoiceFrame extends QuestionFrame {
 
     private void addAnswerAtAnswerPanel(int pos, String text, int degree) {
         JCheckBox check = new JCheckBox();
-        check.setSelected(degree > 0);
+        check.setSelected(degree != 0);
         checkBoxList.add(check);
 
         check.addChangeListener(event -> checkAnswers());
@@ -247,3 +247,4 @@ public class MultiChoiceFrame extends QuestionFrame {
         return dim[1].length;
     }
 }
+

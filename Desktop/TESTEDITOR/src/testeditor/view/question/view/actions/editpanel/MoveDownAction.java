@@ -5,9 +5,7 @@ import testeditor.question.Question;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
-/**
- * Created by main on 04.04.16.
- */
+
 public class MoveDownAction extends MoveAction {
 
     public MoveDownAction(JList<Question> qList, String title, String html_icon) {

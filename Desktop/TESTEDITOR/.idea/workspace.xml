@@ -9,80 +9,29 @@
     <list id="9f31d5ed-6cca-496a-b47c-12031e128f3b" name="Revert: 85%" comment="" />
     <list default="true" id="785c8569-4f15-45c9-b833-f57f9da13f6d" name="Default" comment="85%">
       <change type="NEW" beforePath="" afterPath="$APPLICATION_CONFIG_DIR$/options/notifications.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../untitled/src/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../Java/ppvis2/ppvis2.1.1/src/Controller/AddInfoInBaseData.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../Java/ppvis2/ppvis2.1.1/src/Controller/DeleteFieldsInfoInAddStudDialog.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../Java/ppvis2/ppvis2.1.1/src/View/BoxesForAddDelDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/BaseMainFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/MainFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/ParentFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/img/main.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/img/open.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/img/save.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/img/save_as.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/question_view/MultiChoiceFrame$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/question_view/MultiChoiceFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/question_view/QuestionFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/question_view/actions/CreateQuestionAction$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/question_view/actions/CreateQuestionAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/question_view/actions/EditQuestionAction$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/question_view/actions/EditQuestionAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/question_view/actions/RemoveQuestionAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/services/EditPanelButton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/services/GBC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/services/HintLabel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/services/ListRenderer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/services/QLabel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/services/QListModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/services/QTextArea.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/services/VerticalButton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/services/exceptions/SaveQuestionException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/test_view/ControlPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/test_view/EditPanel$EditingGroup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/test_view/EditPanel$FindField.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/test_view/EditPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/test_view/TestView$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/test_view/TestView$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/test_view/TestView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/test_view/actions/CreateTestAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/test_view/actions/OpenTestAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/gui/test_view/actions/SaveAsTestAction.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/BaseMainFrame.java" afterPath="$PROJECT_DIR$/src/testeditor/view/BaseMainFrame.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/MainFrame.java" afterPath="$PROJECT_DIR$/src/testeditor/view/MainFrame.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/ParentFrame.java" afterPath="$PROJECT_DIR$/src/testeditor/view/ParentFrame.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/img/main.png" afterPath="$PROJECT_DIR$/src/testeditor/view/icons/main.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/img/open.png" afterPath="$PROJECT_DIR$/src/testeditor/view/icons/open.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/img/save.png" afterPath="$PROJECT_DIR$/src/testeditor/view/icons/save.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/img/save_as.png" afterPath="$PROJECT_DIR$/src/testeditor/view/icons/save_as.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/question_view/actions/CreateQuestionAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/CreateQuestionAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/question_view/actions/EditQuestionAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/EditQuestionAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/question_view/actions/RemoveQuestionAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/RemoveQuestionAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/services/EditPanelButton.java" afterPath="$PROJECT_DIR$/src/testeditor/view/beauty/classes/EditPanelButton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/services/GBC.java" afterPath="$PROJECT_DIR$/src/testeditor/view/beauty/classes/GBC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/services/HintLabel.java" afterPath="$PROJECT_DIR$/src/testeditor/view/beauty/classes/ErrorLabel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/services/QLabel.java" afterPath="$PROJECT_DIR$/src/testeditor/view/beauty/classes/QLabel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/services/QListModel.java" afterPath="$PROJECT_DIR$/src/testeditor/view/beauty/classes/QListModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/services/VerticalButton.java" afterPath="$PROJECT_DIR$/src/testeditor/view/beauty/classes/VerticalButton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/services/exceptions/SaveQuestionException.java" afterPath="$PROJECT_DIR$/src/testeditor/view/beauty/classes/error/message/SaveQuestionException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/test_view/TestView.java" afterPath="$PROJECT_DIR$/src/testeditor/view/test/view/TestView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/test_view/actions/CreateTestAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/CreateTestAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/testeditor/gui/test_view/actions/OpenTestAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/OpenTestAction.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/parser/Parser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/parser/XMLParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/saver/Saver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/saver/XmlSaver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/testeditor/parser/Parser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveQuestionAction.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/Test.class" afterPath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/TestEditor.class" afterPath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/TestEditor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/parser/Parser.class" afterPath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/parser/Parser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/parser/XMLParser.class" afterPath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/parser/XMLParser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/question/Answer.class" afterPath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/question/Answer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/question/MultiChoice.class" afterPath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/question/MultiChoice.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/question/Question.class" afterPath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/question/Question.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/saver/Saver.class" afterPath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/saver/Saver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/saver/XmlSaver.class" afterPath="$PROJECT_DIR$/out/production/TESTEDITOR/testeditor/saver/XmlSaver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/Test.java" afterPath="$PROJECT_DIR$/src/testeditor/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/TestEditor.java" afterPath="$PROJECT_DIR$/src/testeditor/TestEditor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/parser/Parser.java" afterPath="$PROJECT_DIR$/src/testeditor/parser/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/question/Question.java" afterPath="$PROJECT_DIR$/src/testeditor/question/Question.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/saver/Saver.java" afterPath="$PROJECT_DIR$/src/testeditor/saver/Saver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/saver/XmlSaver.java" afterPath="$PROJECT_DIR$/src/testeditor/saver/XmlSaver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java" afterPath="$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveDownAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveDownAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveToBeginAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveToBeginAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveToEndAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveToEndAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveUpAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveUpAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/OpenTestAction.java" afterPath="$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/OpenTestAction.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,7 +42,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/TESTEDITOR$TestEditor.coverage" NAME="TestEditor Coverage Results" MODIFIED="1510315355465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/TESTEDITOR$TestEditor.coverage" NAME="TestEditor Coverage Results" MODIFIED="1510343700162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>View.*</FILTER>
     </SUITE>
   </component>
@@ -113,15 +62,38 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\User\Desktop" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="MoveAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoveToBeginAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveToBeginAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>creat</find>
-      <find>getParent()</find>
-      <find>getPare</find>
-      <find>get</find>
-      <find>Pare</find>
       <find>searc</find>
       <find>поиск</find>
       <find>setSelectedIndex</find>
@@ -141,12 +113,28 @@
       <find>answers.add</find>
       <find>все</find>
       <find>HintLabel</find>
+      <find>question`</find>
+      <find>question</find>
+      <find>start</find>
+      <find>star</find>
+      <find>re</find>
+      <find>testeditor.gui.question_view.actions</find>
+      <find>er\/\&gt;\n\&lt;answer fraction\=\&quot;0\&quot; text\=\&quot;3333\&quot;\/\&gt;\&lt;ans</find>
+      <find>&lt;answer/&gt;</find>
+      <find>swapToElementsAction</find>
+      <find>swapElements</find>
+      <find>listModel</find>
     </findStrings>
     <replaceStrings>
       <replace>ErrorLabel</replace>
+      <replace>testeditor.view.question.view.actions.editpanel</replace>
+      <replace />
+      <replace>MoveElementToEnd</replace>
+      <replace>MoveElementToBegin</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\User\Desktop\TESTEDITOR\src\testeditor\gui</dir>
+      <dir>C:\Users\User\Desktop\TESTEDITOR\src\testeditor</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -165,57 +153,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/testeditor/gui/services/VerticalButton.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/services/QTextArea.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/question_view/actions/EditQuestionAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/test_view/TestView.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/services/ListRenderer.java" />
-        <option value="$PROJECT_DIR$/src/AppletApplication.java" />
-        <option value="$PROJECT_DIR$/6.xml" />
-        <option value="$PROJECT_DIR$/src/testeditor/TestEditor.java" />
-        <option value="$PROJECT_DIR$/NormTest123.xml" />
-        <option value="$PROJECT_DIR$/NormTest.xml" />
-        <option value="$PROJECT_DIR$/12345.xml" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/test_view/EditPanel.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/test_view/actions/CreateTestAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/saver/GiftSaver.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/parser/GiftParser.java" />
-        <option value="$PROJECT_DIR$/V.xml" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/question_view/actions/RemoveQuestionAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/ParentFrame.java" />
-        <option value="$PROJECT_DIR$/123.xml" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/test_view/actions/SaveAsTestAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/test_view/actions/OpenTestAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/question_view/QuestionFrame.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/saver/Saver.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/parser/Parser.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/question/Question.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/saver/XmlSaver.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/Test.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/services/QListModel.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/question_view/actions/CreateQuestionAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/question_view/MultiChoiceFrame.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/beautyClasses/QListModel.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/beauty/classes/QListModel.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/question/view/actions/question/frame/EditQuestionAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/question/view/actions/EditQuestionAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/question/view/actions/editpanel/EditQuestionAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/question/view/actions/editpanel/CreateQuestionAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/gui/question/view/actions/editpanel/RemoveQuestionAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/RemoveQuestionAction.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/view/beauty/classes/error/message/SaveQuestionException.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/view/beauty/classes/HintLabel.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/view/beauty/classes/ErrorLabel.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java" />
         <option value="$PROJECT_DIR$/src/testeditor/view/beauty/classes/QTextArea.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/view/beauty/classes/ListRenderer.java" />
         <option value="$PROJECT_DIR$/src/testeditor/view/question/view/QuestionFrame.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/SaveAsTestAction.java" />
+        <option value="$PROJECT_DIR$/src/editor/test/view/test/view/TestView.java" />
+        <option value="$PROJECT_DIR$/src/editor/test/view/question/view/MultiChoiceFrame.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/TestEditor.java" />
+        <option value="$PROJECT_DIR$/123.xml" />
+        <option value="$PROJECT_DIR$/2.xml" />
+        <option value="$PROJECT_DIR$/7.xml" />
+        <option value="$PROJECT_DIR$/src/testeditor/parser/XMLParser.java___jb_tmp___" />
+        <option value="$PROJECT_DIR$/11111.xml" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/test/view/SaveAsTestAction.java" />
         <option value="$PROJECT_DIR$/src/testeditor/view/test/view/ControlPanel.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/view/test/view/EditPanel.java" />
-        <option value="$PROJECT_DIR$/src/testeditor/question/Answer.java" />
+        <option value="$PROJECT_DIR$/src/Parser.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/test/view/TestView.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/Parser.java" />
+        <option value="$PROJECT_DIR$/english.xml" />
+        <option value="$PROJECT_DIR$/poiuiopoiu.xml" />
+        <option value="$PROJECT_DIR$/098765432.xml" />
+        <option value="$PROJECT_DIR$/AAAAAAAAAA.xml" />
+        <option value="$PROJECT_DIR$/src/testeditor/saver/XmlSaver.java" />
+        <option value="$PROJECT_DIR$/3.xml" />
+        <option value="$PROJECT_DIR$/src/testeditor/saver/Saver.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/saver/XMLConst.java" />
         <option value="$PROJECT_DIR$/src/testeditor/parser/XMLParser.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/xml/Parser.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/xml/StudentHandler.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/xml/XMLParser.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/CreateTestAction.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/beauty/classes/QListModel.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/Test.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/test/view/EditPanel.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/xml/XmlSaver.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/xml/XMLConst.java" />
         <option value="$PROJECT_DIR$/src/testeditor/question/MultiChoice.java" />
+        <option value="$PROJECT_DIR$/1.xml" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/SaveAsTestAction.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/xml/XMLFile.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/question/Answer.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/question/Question.java" />
+        <option value="$PROJECT_DIR$/questions.xml" />
+        <option value="$PROJECT_DIR$/12345.xml" />
+        <option value="$PROJECT_DIR$/src/testeditor/xml/QuestionHandler.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveDownAction.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveQuestionAction.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveUpAction.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/OpenTestAction.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/beauty/classes/ListRenderer.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveToEndAction.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveToBeginAction.java" />
+        <option value="$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveAction.java" />
       </list>
     </option>
   </component>
@@ -238,9 +226,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-23" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="728" />
+    <option name="y" value="-15" />
+    <option name="width" value="976" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -658,7 +647,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -679,15 +670,33 @@
             </path>
             <path>
               <item name="TESTEDITOR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="TESTEDITOR" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testeditor" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TESTEDITOR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TESTEDITOR" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testeditor" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TESTEDITOR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TESTEDITOR" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testeditor" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="editpanel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -695,15 +704,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.16376582" />
     <property name="project.structure.side.proportion" value="0.10298661" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mandtool-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="ToolWindowAnt Build.ShowToolbar" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="up&#9;ACTION&#9;UpdateFiles" />
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\TESTEDITOR\icons" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="testeditor.view.test.view" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -917,7 +931,16 @@
       <workItem from="1510040926621" duration="597000" />
       <workItem from="1510080337540" duration="5785000" />
       <workItem from="1510150069903" duration="16336000" />
-      <workItem from="1510253605888" duration="19247000" />
+      <workItem from="1510253605888" duration="22072000" />
+      <workItem from="1510327809930" duration="46437000" />
+      <workItem from="1510569149063" duration="12117000" />
+      <workItem from="1510590977693" duration="807000" />
+      <workItem from="1510598074629" duration="21708000" />
+      <workItem from="1510818264964" duration="2673000" />
+      <workItem from="1510846996733" duration="1090000" />
+      <workItem from="1510921260924" duration="1976000" />
+      <workItem from="1510939228843" duration="6620000" />
+      <workItem from="1510952398846" duration="351000" />
     </task>
     <task id="LOCAL-00001" summary="85%">
       <created>1509697060611</created>
@@ -968,11 +991,39 @@
       <option name="project" value="LOCAL" />
       <updated>1510311990309</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="85%">
+      <created>1510318580920</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1510318580920</updated>
+    </task>
+    <task id="LOCAL-00009" summary="85%">
+      <created>1510319757424</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1510319757424</updated>
+    </task>
+    <task id="LOCAL-00010" summary="85%">
+      <created>1510336624196</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1510336624196</updated>
+    </task>
+    <task id="LOCAL-00011" summary="85%">
+      <created>1510610152872</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1510610152872</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138914000" />
+    <option name="totallyTimeSpent" value="235518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -980,69 +1031,36 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31639722" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.295612" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3165548" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28893661" sideWeight="0.49552572" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19978517" sideWeight="0.49552572" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33140877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.109375" sideWeight="0.5044743" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48267898" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38452655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32794458" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3165548" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32794458" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39838338" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31639722" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19630484" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290993" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28464016" sideWeight="0.49552572" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33140877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.109375" sideWeight="0.5044743" order="8" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1085,33 +1103,82 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/testeditor/view/question/view/QuestionFrame.java</url>
-          <line>163</line>
-          <properties class="testeditor.view.question.view.QuestionFrame" method="collectAnswers">
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java</url>
+          <line>80</line>
+          <properties class="testeditor.view.question.view.MultiChoiceFrame" method="addAnswers">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="87" />
+          <option name="timeStamp" value="321" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java</url>
-          <line>245</line>
-          <properties />
-          <option name="timeStamp" value="91" />
+          <line>87</line>
+          <properties class="testeditor.view.question.view.MultiChoiceFrame" method="addAnswerAtAnswerPanel">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="323" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java</url>
-          <line>239</line>
-          <properties />
-          <option name="timeStamp" value="92" />
+          <line>186</line>
+          <properties class="testeditor.view.question.view.MultiChoiceFrame" method="collectAnswers">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/testeditor/view/question/view/QuestionFrame.java</url>
+          <line>129</line>
+          <properties class="testeditor.view.question.view.QuestionFrame" method="saveQuestion">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveToEndAction.java</url>
+          <line>14</line>
+          <properties class="testeditor.view.question.view.actions.editpanel.MoveToEndAction" method="actionPerformed">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="346" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="95" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="355" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="doc" />
         <watch expression="questionNodes.getLength()" language="JAVA" />
+        <watch expression="questElement" />
+        <watch expression="saxParser" />
       </configuration>
     </watches-manager>
   </component>
@@ -1120,446 +1187,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="4836" column="16" lean-forward="false" selection-start-line="4836" selection-start-column="16" selection-end-line="4836" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/javax/swing/AbstractListModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-          <folding>
-            <element signature="e#1361#1362#0" expanded="false" />
-            <element signature="e#1420#1421#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/awt/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="1145" column="25" lean-forward="false" selection-start-line="1145" selection-start-column="16" selection-end-line="1145" selection-end-column="25" />
-          <folding>
-            <element signature="e#40240#40241#0" expanded="false" />
-            <element signature="e#40267#40268#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="633" column="19" lean-forward="false" selection-start-line="633" selection-start-column="19" selection-end-line="633" selection-end-column="19" />
-          <folding>
-            <element signature="e#23072#23073#0" expanded="false" />
-            <element signature="e#23112#23113#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/gui/question_view/MultiChoiceFrame1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/lang/Iterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/awt/GridBagLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="363" column="13" lean-forward="false" selection-start-line="363" selection-start-column="13" selection-end-line="363" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/org/w3c/dom/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/saver/Saver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/123.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="67" lean-forward="true" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/org/w3c/dom/CDATASection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="81" column="29" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="82" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/saver/XmlSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding>
-            <element signature="method#XmlSaver#0;class#XmlSaver#0" expanded="false" />
-            <element signature="method#doLineForMultiChoice#0;class#XmlSaver#0" expanded="false" />
-            <element signature="method#xmlToString#0;class#XmlSaver#0" expanded="false" />
-            <element signature="method#setTextField#0;class#XmlSaver#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/awt/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="1468" column="25" lean-forward="false" selection-start-line="1468" selection-start-column="25" selection-end-line="1468" selection-end-column="25" />
-          <folding>
-            <element signature="e#57240#57241#0" expanded="false" />
-            <element signature="e#57272#57273#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/javax/swing/AbstractButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="2086" column="16" lean-forward="false" selection-start-line="2086" selection-start-column="16" selection-end-line="2086" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/question/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="method#Question#0;class#Question#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/ErrorLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/GBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#GBC#0" expanded="false" />
-            <element signature="method#GBC#0;class#GBC#0" expanded="false" />
-            <element signature="method#setFill#0;class#GBC#0" expanded="false" />
-            <element signature="method#setAnchor#0;class#GBC#0" expanded="false" />
-            <element signature="method#setInsets#0;class#GBC#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/error/message/SaveQuestionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/QListModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="88" column="45" lean-forward="false" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
-          <folding>
-            <element signature="method#addElement#0;class#QListModel#0" expanded="false" />
-            <element signature="method#filter#0;class#QListModel#0" expanded="false" />
-            <element signature="e#1248#1341#0" expanded="false" />
-            <element signature="method#insertUpdate#0;class#QListModel#0" expanded="false" />
-            <element signature="method#removeUpdate#0;class#QListModel#0" expanded="false" />
-            <element signature="method#changedUpdate#0;class#QListModel#0" expanded="false" />
-            <element signature="e#2684#2771#0" expanded="false" />
-            <element signature="method#update#0;class#QListModel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/QLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="method#QLabel#0;class#QLabel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/VerticalButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/QTextArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="method#QTextArea#0;class#QTextArea#0" expanded="false" />
-            <element signature="method#changeSize#0;class#QTextArea#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/awt/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="118" column="13" lean-forward="false" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/EditPanelButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="method#EditPanelButton#0;class#EditPanelButton#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/ListRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="method#getListCellRendererComponent#0;class#ListRenderer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/EditQuestionAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="method#EditQuestionAction#0;class#EditQuestionAction#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#EditQuestionAction#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/QuestionFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="129" column="32" lean-forward="false" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
-          <folding>
-            <element signature="method#QuestionFrame#0;class#QuestionFrame#0" expanded="false" />
-            <element signature="method#saveQuestion#0;class#QuestionFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="87" column="61" lean-forward="false" selection-start-line="87" selection-start-column="61" selection-end-line="87" selection-end-column="61" />
-          <folding>
-            <element signature="method#MultiChoiceFrame#0;class#MultiChoiceFrame#0" expanded="false" />
-            <element signature="e#1696#2166#0" expanded="false" />
-            <element signature="method#addTitles#0;class#MultiChoiceFrame#0" expanded="false" />
-            <element signature="method#addAnswers#0;class#MultiChoiceFrame#0" expanded="false" />
-            <element signature="method#addAnswer#0;class#MultiChoiceFrame#0" expanded="false" />
-            <element signature="class#3704:4165" expanded="false" />
-            <element signature="method#componentShown#0;class#3704:4165" expanded="false" />
-            <element signature="method#componentResized#0;class#3704:4165" expanded="false" />
-            <element signature="method#deleteAnswer#0;class#MultiChoiceFrame#0" expanded="false" />
-            <element signature="method#updateCheckBox#0;class#MultiChoiceFrame#0" expanded="false" />
-            <element signature="method#checkAnswers#0;class#MultiChoiceFrame#0" expanded="false" />
-            <element signature="method#collectAnswers#0;class#MultiChoiceFrame#0" expanded="false" />
-            <element signature="method#getColsNumber#0;class#MultiChoiceFrame#0" expanded="false" />
-            <element signature="method#getRowsNumber#0;class#MultiChoiceFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/RemoveQuestionAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding>
-            <element signature="method#RemoveQuestionAction#0;class#RemoveQuestionAction#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#RemoveQuestionAction#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/CreateTestAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/OpenTestAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/SaveAsTestAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482">
-          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding>
-            <element signature="docComment;class#SaveAsTestAction#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testeditor/view/test/view/ControlPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="method#ControlPanel#0;class#ControlPanel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/test/view/EditPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="method#EditPanel#0;class#EditPanel#0" expanded="false" />
-            <element signature="docComment;class#EditingGroup#0;class#EditPanel#0" expanded="false" />
-            <element signature="class#EditingGroup#0;class#EditPanel#0" expanded="false" />
-            <element signature="method#EditingGroup#0;class#EditingGroup#0;class#EditPanel#0" expanded="false" />
-            <element signature="docComment;class#FindField#0;class#EditPanel#0" expanded="false" />
-            <element signature="class#FindField#0;class#EditPanel#0" expanded="false" />
-            <element signature="method#FindField#0;class#FindField#0;class#EditPanel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/parser/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/TestEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="method#main#0;class#TestEditor#0" expanded="false" />
-            <element signature="e#569#754#0" expanded="false" />
-            <element signature="method#isWindows#0;class#TestEditor#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding>
-            <element signature="method#getTestFromFile#0;class#Test#0" expanded="false" />
-            <element signature="method#getTest#0;class#Test#0" expanded="false" />
-            <element signature="method#createTest#0;class#Test#0" expanded="false" />
-            <element signature="method#update#0;class#Test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/view/ParentFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="method#ParentFrame#0;class#ParentFrame#0" expanded="false" />
-            <element signature="method#setSize#0;class#ParentFrame#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-128">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1567,9 +1205,134 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="method#MainFrame#0;class#MainFrame#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/ParentFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/xml/XmlSaver.java" />
+    <entry file="file://$PROJECT_DIR$/src/testeditor/xml/XMLConst.java" />
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/com/sun/org/apache/xerces/internal/parsers/AbstractSAXParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="511" column="9" lean-forward="true" selection-start-line="511" selection-start-column="9" selection-end-line="511" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/jre/lib/rt.jar!/sun/misc/Launcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="333" column="0" lean-forward="false" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="507" column="0" lean-forward="false" selection-start-line="507" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/231.xml" />
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="110" column="17" lean-forward="false" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.xml" />
+    <entry file="file://$PROJECT_DIR$/1.xml" />
+    <entry file="file://$PROJECT_DIR$/src/testeditor/xml/XMLFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="64" column="56" lean-forward="false" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.xml" />
+    <entry file="file://$PROJECT_DIR$/4.xml" />
+    <entry file="file://$PROJECT_DIR$/12345.xml" />
+    <entry file="file://$PROJECT_DIR$/src/testeditor/xml/QuestionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/question/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveQuestionAction.java" />
+    <entry file="file://$PROJECT_DIR$/questions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/question/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/awt/Insets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1896">
+          <caret line="102" column="11" lean-forward="false" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105864">
+          <caret line="4808" column="45" lean-forward="false" selection-start-line="4808" selection-start-column="45" selection-end-line="4808" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/GBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/question/MultiChoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/javax/swing/JFileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1577,62 +1340,211 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="method#BaseMainFrame#0;class#BaseMainFrame#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/ListRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/test/view/EditPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="1928" column="47" lean-forward="false" selection-start-line="1928" selection-start-column="47" selection-end-line="1928" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/TestEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveUpAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/QuestionFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1988">
+          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testeditor/view/test/view/TestView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="docComment;class#TestView#0" expanded="false" />
-            <element signature="method#TestView#0;class#TestView#0" expanded="false" />
-            <element signature="class#945:2156" expanded="false" />
-            <element signature="method#intervalAdded#0;class#945:2156" expanded="false" />
-            <element signature="method#intervalRemoved#0;class#945:2156" expanded="false" />
-            <element signature="method#contentsChanged#0;class#945:2156" expanded="false" />
-          </folding>
+        <state relative-caret-position="24">
+          <caret line="68" column="43" lean-forward="false" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveDownAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/javax/swing/JList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="536" column="16" lean-forward="false" selection-start-line="536" selection-start-column="16" selection-end-line="536" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/CreateTestAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/SaveAsTestAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/test/view/actions/controlpanel/OpenTestAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/CreateQuestionAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        <state relative-caret-position="-344">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/RemoveQuestionAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/javax/swing/DefaultListModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="378" column="19" lean-forward="false" selection-start-line="378" selection-start-column="19" selection-end-line="378" selection-end-column="19" />
           <folding>
-            <element signature="method#CreateQuestionAction#0;class#CreateQuestionAction#0" expanded="false" />
+            <element signature="docComment;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#getSize#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#getElementAt#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#copyInto#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#trimToSize#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#ensureCapacity#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#setSize#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="method#setSize#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#capacity#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#elements#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#indexOf#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#indexOf#1;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#lastIndexOf#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#lastIndexOf#1;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#elementAt#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#firstElement#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#lastElement#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#setElementAt#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="method#setElementAt#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#removeElementAt#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="method#removeElementAt#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#insertElementAt#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="method#insertElementAt#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#addElement#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#removeElement#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#removeAllElements#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="method#removeAllElements#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#toArray#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="method#toArray#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="method#add#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="method#remove#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="method#clear#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="docComment;method#removeRange#0;class#DefaultListModel#0" expanded="false" />
+            <element signature="method#removeRange#0;class#DefaultListModel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://A:/Программы/JetBrains IntelliJ IDEA Ultimate 2016.3.3 Build 163.11103.6 Final Eng/JDK/src.zip!/java/util/Collections.java">
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/beauty/classes/QListModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="4789" column="5" lean-forward="true" selection-start-line="4789" selection-start-column="5" selection-end-line="4789" selection-end-column="5" />
+        <state relative-caret-position="118">
+          <caret line="87" column="21" lean-forward="false" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/EditQuestionAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/MultiChoiceFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
           <folding>
-            <element signature="e#186747#186748#0" expanded="true" />
-            <element signature="e#186792#186793#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="class#3744:4205" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/question/Answer.java">
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveToEndAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="method#Answer#0;class#Answer#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testeditor/question/MultiChoice.java">
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveToBeginAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testeditor/view/question/view/actions/editpanel/MoveAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding />
         </state>
       </provider>
