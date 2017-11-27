@@ -1,6 +1,7 @@
 package testeditor.view.test.view;
 
 import testeditor.contoller.Question;
+import testeditor.view.test.view.actions.controlpanel.ChangeColorPanelAction;
 import testeditor.view.test.view.actions.controlpanel.CreateTestAction;
 import testeditor.view.test.view.actions.controlpanel.OpenTestAction;
 import testeditor.view.test.view.actions.controlpanel.SaveAsTestAction;
@@ -28,6 +29,9 @@ public class ControlPanel extends JPanel {
         saveAsButton = new VerticalButton(new SaveAsTestAction());
         saveAsButton.setEnabled(false);
         add(saveAsButton);
+
+        JButton changeColorOfPanel =new VerticalButton((new ChangeColorPanelAction(questionList)));
+        add(changeColorOfPanel);
 
     }
 

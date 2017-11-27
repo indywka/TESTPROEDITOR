@@ -1,17 +1,19 @@
 package testeditor.view.question.view;
 
 import javax.swing.*;
-import javax.swing.undo.UndoManager;
-import javax.swing.text.JTextComponent;
 import javax.swing.text.Document;
+import javax.swing.text.JTextComponent;
+import javax.swing.undo.UndoManager;
+import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Iterator;
-import java.awt.event.*;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.DataFlavor;
-import java.awt.*;
 
 public class DocumentUndoManager {
 
@@ -49,7 +51,6 @@ public class DocumentUndoManager {
             public void mouseClicked(MouseEvent e) {
                 //если нажата правая кнопка мыши
                 if (e.getButton() == MouseEvent.BUTTON3) {
-                    //if (e.isPopupTrigger()) { // <-- в линуксе (Fedora Core 5, KDE 3.5.3) это не работает
                     //устанавливаем текстовый компонент для меню
                     popup.setDocumentHolder((JTextComponent) e.getSource());
                     //отображаем всплывающее меню

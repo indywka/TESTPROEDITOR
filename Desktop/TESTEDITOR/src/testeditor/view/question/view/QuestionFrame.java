@@ -21,7 +21,6 @@ import static javax.swing.GroupLayout.Alignment.LEADING;
 abstract public class QuestionFrame extends BaseMainFrame {
 
     final String DEFAULT_MESSAGE = "Вы можете добавлять новые, изменять или удалять имеющиеся варианты ответа";
-
     final JPanel answerPanel = new JPanel();
 
     final ArrayList<JTextComponent> fields = new ArrayList<>();
@@ -39,6 +38,7 @@ abstract public class QuestionFrame extends BaseMainFrame {
     QuestionFrame(Question thisQuestion) {
 
         this.question = thisQuestion;
+
 
         int WIDTH = 500;
         setMaximumSize(new Dimension(WIDTH, SCREEN_HEIGHT));

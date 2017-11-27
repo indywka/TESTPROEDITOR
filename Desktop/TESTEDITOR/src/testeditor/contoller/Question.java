@@ -11,7 +11,7 @@ abstract public class Question implements Comparable<Question> {
     private String qText;
     private String qName;
     private List<Answer> answers;
-
+    protected QuestionFrame frame = null;
     /**
      * qText   - заголовок вопроса
      * answers - списочный массив вариантов ответа к вопросу

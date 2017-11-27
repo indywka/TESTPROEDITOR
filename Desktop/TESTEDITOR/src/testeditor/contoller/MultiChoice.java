@@ -17,11 +17,11 @@ public class MultiChoice extends Question {
         this("", "", Collections.singletonList(new Answer()));
     }
 
-    public MultiChoice(String qName, String qText) {
+    MultiChoice(String qName, String qText) {
         super(qName, qText);
     }
 
     public QuestionFrame getFrame() {
-        return new MultiChoiceFrame(this);
+        return (frame == null) ? new MultiChoiceFrame(this) : frame;
     }
 }

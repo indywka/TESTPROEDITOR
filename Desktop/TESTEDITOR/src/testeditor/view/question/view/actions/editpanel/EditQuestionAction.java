@@ -26,8 +26,8 @@ public class EditQuestionAction extends AbstractAction {
 
     public void actionPerformed(ActionEvent event) {
         int index = list.getSelectedIndex();
-        Question selectedQuestion = (Question) Test.getTest().toArray()[index];
-        JFrame qFrame = selectedQuestion.getFrame();
+        Question q = (Question) Test.getTest().toArray()[index];
+        JFrame qFrame = q.getFrame();
         qFrame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosed(WindowEvent event) {

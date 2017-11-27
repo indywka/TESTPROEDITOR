@@ -5,7 +5,7 @@ import java.awt.*;
 
 abstract public class BaseMainFrame extends ParentFrame {
 
-    protected final int HEIGHT_MIN = 300;
+    protected final int HEIGHT_MIN = 400;
 
     protected BaseMainFrame() {
 
