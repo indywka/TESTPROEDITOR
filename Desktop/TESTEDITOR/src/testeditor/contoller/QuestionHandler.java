@@ -33,6 +33,7 @@ public class QuestionHandler extends DefaultHandler {
             String QName = attributes.getValue(XMLFile.XMLConst.TEXT);
             String QText = attributes.getValue(XMLFile.XMLConst.NAME);
             question = new MultiChoice(QName, QText);
+            question = new ShortAnswer(QName, QText);
         } else if (qName.equalsIgnoreCase(XMLFile.XMLConst.ANSWER)) {
             String aText = attributes.getValue(XMLFile.XMLConst.TEXT);
             int fraction = Integer.parseInt(attributes.getValue(XMLFile.XMLConst.FRACTION));

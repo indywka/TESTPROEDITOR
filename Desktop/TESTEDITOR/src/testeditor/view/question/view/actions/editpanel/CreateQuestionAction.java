@@ -2,6 +2,7 @@ package testeditor.view.question.view.actions.editpanel;
 
 import testeditor.contoller.MultiChoice;
 import testeditor.contoller.Question;
+import testeditor.contoller.ShortAnswer;
 import testeditor.model.QListModel;
 
 import javax.swing.*;
@@ -28,18 +29,41 @@ public class CreateQuestionAction extends AbstractAction {
 
     public void actionPerformed(ActionEvent event) {
 
-        q = new MultiChoice();
-        JFrame qFrame = q.getFrame();
+        Object[] types = {
+                "Выбор",
+                "Короткий ответ"
+        };
+        String s = (String) JOptionPane.showInputDialog(
+                null,
+                "",
+                "Выберите тип вопроса:",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                types,
+                "Выбор");
 
-        qFrame.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosed(WindowEvent event) {
-                QListModel listModel = (QListModel) list.getModel();
-                listModel.addElement(CreateQuestionAction.this.q);
-                list.setSelectedIndex(listModel.getSize() - 1);
+        if ((s != null) && (s.length() > 0)) {
 
+            switch (s) {
+                case "Выбор":
+                    q = new MultiChoice();
+                    break;
+                case "Короткий ответ":
+                    q = new ShortAnswer();
+                    break;
             }
-        });
+
+            JFrame qFrame = q.getFrame();
+
+            qFrame.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosed(WindowEvent event) {
+                    QListModel listModel = (QListModel) list.getModel();
+                    listModel.addElement(CreateQuestionAction.this.q);
+                    list.setSelectedIndex(listModel.getSize() - 1);
+
+                }
+            });
+        }
     }
 }
-

@@ -1,16 +1,14 @@
 package testeditor.view.question.view;
 
-import testeditor.question.Answer;
-import testeditor.question.Question;
-import testeditor.view.BaseMainFrame;
-import testeditor.view.beauty.classes.ErrorLabel;
-import testeditor.view.beauty.classes.QLabel;
-import testeditor.view.beauty.classes.QTextArea;
-import testeditor.view.beauty.classes.error.message.SaveQuestionException;
+import testeditor.contoller.Answer;
+import testeditor.contoller.Question;
+import testeditor.view.frame.view.BaseMainFrame;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
+import javax.swing.text.BadLocationException;
 import javax.swing.text.JTextComponent;
 import java.awt.*;
 import java.util.ArrayList;
@@ -34,8 +32,8 @@ abstract public class QuestionFrame extends BaseMainFrame {
     private final QTextArea nameTextArea;
 
     private final QTextArea questionTextArea;
-
     private final JButton saveButton;
+    DocumentUndoManager undo = DocumentUndoManager.getInstance();
 
 
     QuestionFrame(Question thisQuestion) {
@@ -50,7 +48,6 @@ abstract public class QuestionFrame extends BaseMainFrame {
 
         setVisible(true);
         setLayout(new BorderLayout(25, 25));
-
         JPanel northPanel = new JPanel();
         GroupLayout northLayout = new GroupLayout(northPanel);
         northPanel.setLayout(northLayout);
@@ -66,6 +63,11 @@ abstract public class QuestionFrame extends BaseMainFrame {
 
         fields.add(nameTextArea);
         fields.add(questionTextArea);
+
+
+        undo.registerDocumentHolder(nameTextArea);
+        undo.registerDocumentHolder(questionTextArea);
+
 
         northLayout.setHorizontalGroup(northLayout.createSequentialGroup()
                 .addGroup(northLayout.createParallelGroup(LEADING)
@@ -162,4 +164,50 @@ abstract public class QuestionFrame extends BaseMainFrame {
     }
 
     abstract List<Answer> collectAnswers() throws SaveQuestionException;
+
+    public class QLabel extends JLabel {
+        QLabel(String s) {
+            super(s);
+
+            setFont(new Font("Sans-Serif", Font.PLAIN, 12));
+        }
+    }
+
+    public class ErrorLabel extends JLabel {
+
+        void error(String text) {
+            setText("<html><p><font color='red'><b>" + text + "</font></b></p></html>");
+        }
+
+        void info(String text) {
+            setText("<html><p>" + text + "</p></html>");
+        }
+    }
+
+    class QTextArea extends JTextArea {
+        QTextArea(String s) {
+            super(s);
+            setFont(new Font("Sans-Serif", Font.PLAIN, 12));
+            Border border = BorderFactory.createLineBorder(new Color(185, 242, 237), 1, true);
+            setBorder(BorderFactory.createCompoundBorder(border, BorderFactory.createEmptyBorder(5, 5, 5, 5)));
+
+            setLineWrap(true);
+            setWrapStyleWord(true);
+        }
+
+        void changeSize() {
+            try {
+                Rectangle rect = this.modelToView(this.getDocument().getLength());
+                this.setPreferredSize(new Dimension(0, rect.y + rect.height + 5));
+            } catch (BadLocationException ex) {
+                ex.getMessage();
+            }
+        }
+    }
+
+    class SaveQuestionException extends Exception {
+        SaveQuestionException(String message) {
+            super(message);
+        }
+    }
 }

@@ -7,7 +7,7 @@ public class ParentFrame extends JFrame {
 
     protected final int SCREEN_HEIGHT;
     final int SCREEN_WIDTH;
-
+    protected int initialHeight;
     ParentFrame() {
 
         Toolkit kit = Toolkit.getDefaultToolkit();

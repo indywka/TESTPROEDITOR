@@ -1,14 +1,12 @@
 package testeditor.view.question.view;
 
-import testeditor.question.Answer;
-import testeditor.question.Question;
-import testeditor.view.beauty.classes.GBC;
-import testeditor.view.beauty.classes.QTextArea;
-import testeditor.view.beauty.classes.error.message.SaveQuestionException;
-
+import testeditor.contoller.Answer;
+import testeditor.contoller.Question;
+import testeditor.view.test.view.GBC;
 import javax.swing.*;
 import javax.swing.text.JTextComponent;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.util.ArrayList;
@@ -16,9 +14,9 @@ import java.util.List;
 
 
 public class MultiChoiceFrame extends QuestionFrame {
+
     private final List<Answer> aList;
     private final List<JCheckBox> checkBoxList = new ArrayList<>();
-    private final List<JSpinner> spinnerList = new ArrayList<>();
     private final JPanel answers = new JPanel();
     private int aCount;
 
@@ -52,13 +50,14 @@ public class MultiChoiceFrame extends QuestionFrame {
         addButtonPanel.add(addButton);
 
         aCount = aList.size();
-        addButton.addActionListener(e -> {
+        addButton.addActionListener((ActionEvent e) -> {
             addAnswerAtAnswerPanel(aCount * 2 + 1, "", 0);
             answers.add(new JSeparator(), new GBC(0, aCount * 2 + 2, 9, 1, 0, 0, 0, 0).setFill(GBC.BOTH).setInsets(0, 0, 5, 0));
             aScrollPane.getViewport()
                     .setViewPosition(
                             new Point(aScrollPane.getX(),
                                     aScrollPane.getHeight()));
+
             answers.updateUI();
             aCount++;
             checkAnswers();
@@ -89,14 +88,13 @@ public class MultiChoiceFrame extends QuestionFrame {
         JCheckBox check = new JCheckBox();
         check.setSelected(degree != 0);
         checkBoxList.add(check);
-
         check.addChangeListener(event -> checkAnswers());
 
         answers.add(check, new GBC(0, pos, 1, 1, 0, 0, 0, 0).setInsets(5, 5, 5, 5));
         answers.add(new JSeparator(JSeparator.VERTICAL), new GBC(1, pos, 1, 1, 0, 0, 0, 0).setFill(GBC.VERTICAL));
 
         QTextArea answerText = new QTextArea(text);
-
+        undo.registerDocumentHolder(answerText);
         answerText.addCaretListener(e -> answerText.changeSize());
         answerText.addComponentListener(new ComponentAdapter() {
             @Override
@@ -132,6 +130,7 @@ public class MultiChoiceFrame extends QuestionFrame {
         delButton.addActionListener(e -> deleteAnswer(answers.getComponentZOrder(delButton)));
         answers.add(delButton, new GBC(8, pos, 1, 1, 0, 0, 0, 0).setAnchor(GBC.BASELINE).setInsets(5, 10, 5, 5));
     }
+
 
     private void deleteAnswer(int delButtonIndex) {
         for (int i = -1; i < getColsNumber(); i++) {
@@ -185,6 +184,7 @@ public class MultiChoiceFrame extends QuestionFrame {
     }
 
     protected List<Answer> collectAnswers() throws SaveQuestionException {
+
         List<Answer> aList = new ArrayList<>();
         int cols = getColsNumber();
         int rows = getRowsNumber();
@@ -246,5 +246,6 @@ public class MultiChoiceFrame extends QuestionFrame {
         int[][] dim = gbl.getLayoutDimensions();
         return dim[1].length;
     }
+
 }
 
