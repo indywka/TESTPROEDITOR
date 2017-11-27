@@ -1,16 +1,12 @@
 package testeditor.view.test.view;
 
-import testeditor.question.Question;
-import testeditor.view.beauty.classes.EditPanelButton;
-import testeditor.view.beauty.classes.QListModel;
-import testeditor.view.question.view.actions.editpanel.CreateQuestionAction;
-import testeditor.view.question.view.actions.editpanel.EditQuestionAction;
-import testeditor.view.question.view.actions.editpanel.RemoveQuestionAction;
+import testeditor.contoller.Question;
+import testeditor.model.QListModel;
 import testeditor.view.question.view.actions.editpanel.*;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
-import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
@@ -18,19 +14,14 @@ import java.util.List;
 
 
 public class EditPanel extends JPanel {
-    private JButton editButton,
-            createButton,
-            deleteButton,
-            beginButton,
-            endButton,
-            upButton,
-            downButton;
-
+    private JButton editButton;
+    private JButton createButton;
+    private JButton deleteButton;
     private JList<Question> list;
 
     private ArrayList<JButton> buttons;
 
-    public EditPanel(JList<Question> list) {
+    EditPanel(JList<Question> list) {
         this.list = list;
 
         // Экземпляры групп кнопок для редактирования и перемещения
@@ -70,12 +61,25 @@ public class EditPanel extends JPanel {
         return createButton;
     }
 
-    public JButton getEditButton() {
+    JButton getDeleteButton() {
+        return deleteButton;
+    }
+
+    JButton getEditButton() {
         return editButton;
     }
 
     public List<JButton> getButtons() {
         return buttons;
+    }
+
+    private class EditPanelButton extends JButton {  //размер кнопок в панели  кнопок для редактирования вопроса
+
+        EditPanelButton(Action a) {
+            super(a);
+            setHorizontalAlignment(SwingConstants.LEFT);
+            setMargin(new Insets(0, 10, 5, 10));
+        }
     }
 
     /**
@@ -131,10 +135,10 @@ public class EditPanel extends JPanel {
             movingGroupLayout.setAutoCreateContainerGaps(true);
             movingGroupLayout.setAutoCreateGaps(true);
 
-            beginButton = new EditPanelButton(new MoveToBeginAction(list, "В начало", "&#9650;"));
-            endButton = new EditPanelButton(new MoveToEndAction(list, "В конец", "&#9660;"));
-            upButton = new EditPanelButton(new MoveUpAction(list, "Выше", "&#8657;"));
-            downButton = new EditPanelButton(new MoveDownAction(list, "Ниже", "&#8659;"));
+            JButton beginButton = new EditPanelButton(new MoveToBeginAction(list, "В начало", "&#9650;"));
+            JButton endButton = new EditPanelButton(new MoveToEndAction(list, "В конец", "&#9660;"));
+            JButton upButton = new EditPanelButton(new MoveUpAction(list, "Выше", "&#8657;"));
+            JButton downButton = new EditPanelButton(new MoveDownAction(list, "Ниже", "&#8659;"));
 
             buttons.add(beginButton);
             buttons.add(upButton);

@@ -1,12 +1,9 @@
-package testeditor.xml;
+package testeditor.contoller;
 
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-import testeditor.question.Answer;
-import testeditor.question.MultiChoice;
-import testeditor.question.Question;
 
 import java.util.ArrayList;
 import java.util.List;

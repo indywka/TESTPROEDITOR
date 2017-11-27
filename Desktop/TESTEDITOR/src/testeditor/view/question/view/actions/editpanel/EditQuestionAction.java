@@ -1,7 +1,7 @@
 package testeditor.view.question.view.actions.editpanel;
 
 import testeditor.Test;
-import testeditor.question.Question;
+import testeditor.contoller.Question;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

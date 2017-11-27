@@ -1,4 +1,4 @@
-package testeditor.view.beauty.classes;
+package testeditor.view.test.view;
 
 import java.awt.*;
 

@@ -1,4 +1,4 @@
-package testeditor.question;
+package testeditor.contoller;
 
 import testeditor.view.question.view.MultiChoiceFrame;
 import testeditor.view.question.view.QuestionFrame;

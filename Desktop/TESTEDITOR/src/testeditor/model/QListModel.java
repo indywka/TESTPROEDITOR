@@ -1,15 +1,12 @@
-package testeditor.view.beauty.classes;
+package testeditor.model;
 
-import testeditor.Test;
-import testeditor.question.Question;
+import testeditor.contoller.Question;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import javax.swing.event.ListDataListener;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
-import java.util.Arrays;
 import java.util.Vector;
 
 
@@ -80,28 +77,4 @@ public class QListModel extends DefaultListModel<Question> implements DocumentLi
             badLocationException.printStackTrace();
         }
     }
-
-    //гасим обработку событий и работаем со списком. Потом снова включаем обработку событий
-    //генерируем событие добавления и обновляем UI вручную, т.к. во время обновления списка
-    //эти события были погашены вместе с остальными
-
-    public void update(JList<Question> list) {
-        try {
-            ListDataListener[] listeners = this.getListDataListeners();
-            Arrays.stream(listeners).forEach(this::removeListDataListener);
-            this.clear();
-
-            Test.getTest().forEach(this::addElement);
-            Arrays.stream(listeners).forEach(this::addListDataListener);
-
-            list.revalidate();
-            fireIntervalAdded(list, 0, Test.getTest().size());
-            list.updateUI();
-
-
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
-
 }

@@ -1,15 +1,15 @@
 package testeditor.view.test.view.actions.controlpanel;
 
-import testeditor.view.MainFrame;
-import testeditor.xml.XMLFile;
+import testeditor.view.frame.view.MainFrame;
+import testeditor.contoller.XMLFile;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.io.File;
-import java.io.ObjectInputStream;
 import java.net.URL;
+
 
 public class SaveAsTestAction extends AbstractAction {
 

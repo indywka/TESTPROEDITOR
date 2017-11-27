@@ -1,9 +1,9 @@
 package testeditor.view.test.view.actions.controlpanel;
 
 import testeditor.Test;
-import testeditor.question.Question;
-import testeditor.view.MainFrame;
-import testeditor.view.beauty.classes.QListModel;
+import testeditor.contoller.Question;
+import testeditor.model.QListModel;
+import testeditor.view.frame.view.MainFrame;
 import testeditor.view.test.view.ControlPanel;
 import testeditor.view.test.view.EditPanel;
 import testeditor.view.test.view.TestView;
@@ -37,10 +37,14 @@ public class CreateTestAction extends AbstractAction {
         listModel.removeAllElements();
 
         TestView testView = (TestView) list.getParent().getParent().getParent(); //возвращаем родительский элемент компонента...слои
-        if (!testView.getEditPanel().isVisible()) testView.getEditPanel().setVisible(true);
+        if (!testView.getEditPanel().isVisible()) {
+            testView.getEditPanel().setVisible(true);
+        }
 
         EditPanel editPanel = testView.getEditPanel();
-        editPanel.getButtons().forEach(b -> b.setEnabled(false));
+        for (JButton b : editPanel.getButtons()) {
+            b.setEnabled(false);
+        }
         editPanel.getCreateButton().setEnabled(true);
 
         ControlPanel controlPanel = testView.getControlPanel();

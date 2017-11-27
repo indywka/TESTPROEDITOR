@@ -1,4 +1,4 @@
-package testeditor.question;
+package testeditor.contoller;
 
 import testeditor.view.question.view.QuestionFrame;
 
@@ -11,12 +11,10 @@ abstract public class Question implements Comparable<Question> {
     private String qText;
     private String qName;
     private List<Answer> answers;
-    private float defaultGrade;
-    private float penalty;
 
     /**
-     *  qText   - заголовок вопроса
-     *  answers - списочный массив вариантов ответа к вопросу
+     * qText   - заголовок вопроса
+     * answers - списочный массив вариантов ответа к вопросу
      */
     Question(String qName, String qText, List<Answer> answers) {
         this.answers = answers;

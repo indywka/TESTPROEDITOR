@@ -1,11 +1,9 @@
-package testeditor.xml;
+package testeditor.contoller;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 import testeditor.Test;
-import testeditor.question.Answer;
-import testeditor.question.Question;
 
 import javax.swing.*;
 import javax.xml.parsers.*;

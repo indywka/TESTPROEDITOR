@@ -1,4 +1,4 @@
-package testeditor.view;
+package testeditor.view.frame.view;
 
 import testeditor.view.test.view.TestView;
 
